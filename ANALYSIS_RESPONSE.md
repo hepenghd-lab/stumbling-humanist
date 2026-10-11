@@ -49,7 +49,7 @@
 - Python 检查 11 项通过；词表 65 条、31 组；shell/Python 语法通过。
 - 原有完整模拟前端检查通过，覆盖中文输入、代码/JSON、键名和退出状态。
 - 新版包装器实际启动官方 Codex CLI 0.162.1，记录到 82 个中文字符，退出码 0。使用临时 HOME/CODEX_HOME、无效的本地模型地址和合成密钥，未提供真实账户或提交模型任务；临时设置已删除。
-- 新的 Docker/GitHub Actions 结果单独记录；旧版 ARM64 58/6 容器材料只属于旧版本，不能用来证明此次修订的容器验证。
+- [新修订 GitHub Actions 实际容器执行通过](https://github.com/hepenghd-lab/stumbling-humanist/actions/runs/38152691631)，对应源码提交 086bbd0799e08bb177dc950b71eae2346bf35f6d：Linux AMD64 容器内 Node 69 项、Python 6 项，另行生命周期 5 项通过；禁网、无宿主挂载、非 root、只读根、能力为 0 的运行检查，以及完整模拟 PTY 与 shell 安装卸载通过。旧版 ARM64 58/6 材料仍只属于旧版本。
 
 公开材料见 [verification/1.2.1-local.2](verification/1.2.1-local.2/README.md)。可对全部公开录制重跑：
 

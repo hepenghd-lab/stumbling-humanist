@@ -1,6 +1,6 @@
 # 隔离容器测试
 
-当前修订 local.2 的源清单为 47 个文件（新增重绘测试、帮助器和录制样例）。下述 58/6 容器结果属于旧版 local.1；新修订的实际结果单独保存，不能沿用历史通过状态。
+当前修订 local.2 的源清单为 47 个文件（新增重绘测试、帮助器和录制样例）。下述 58/6 容器结果属于旧版 local.1；新修订 Linux AMD64 的实际 Docker/CI 已通过：Node 69 项、容器内 Python 6 项、生命周期 5 项；见 verification/1.2.1-local.2/github-actions.json 与 github-container.log。不能沿用历史通过状态。
 
 2026-10-11 已完成真实 Linux ARM64 容器测试：58 项 Node 检查、6 项 Python 检查、49 条词表验证、完整模拟 Codex 中文交互及实际 shell 安装/卸载全部通过。最终记录见 [VALIDATION.md](VALIDATION.md)。临时运行环境已清理，所检查的宿主机配置、认证文件哈希和官方 Codex 入口未变。
 

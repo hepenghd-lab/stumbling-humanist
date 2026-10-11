@@ -7,7 +7,7 @@ A humanities student's stumbling, groping way. No map, only footsteps; no guide,
 
 **codex-zh-local** 将已确认的固定英文提示翻译为中文，帮助中文用户理解动作状态、错误、审批和快捷键。它通过独立入口启动官方 Codex CLI，基于 [taekchef/codex-code-zh-cn](https://github.com/taekchef/codex-code-zh-cn) 修订，保留 MIT 许可。
 
-[报告问题与修复](ANALYSIS_RESPONSE.md) · [论文式技术报告](paper/PAPER.zh-CN.md) · [论文 PDF](paper/PAPER.zh-CN.pdf) · [实际验证材料](verification/2026-10-11-arm64/README.md) · [全部译文](TRANSLATIONS.md) · [复现说明](CONTAINER_TEST.md)
+[报告问题与修复](ANALYSIS_RESPONSE.md) · [论文式技术报告](paper/PAPER.zh-CN.md) · [论文 PDF](paper/PAPER.zh-CN.pdf) · [当前验证材料](verification/1.2.1-local.2/README.md) · [全部译文](TRANSLATIONS.md) · [复现说明](CONTAINER_TEST.md)
 
 ![模拟前端验证示意](docs/terminal-demo.svg)
 
@@ -24,7 +24,8 @@ A humanities student's stumbling, groping way. No map, only footsteps; no guide,
 | 文案开发基线 | 官方 Codex CLI 0.162.1 |
 | 当前本机验证 | 69 项 Node、11 项 Python通过；8 份真实录制回放均出现中文 |
 | 实际官方 CLI 启动 | 新包装器驱动官方 0.162.1，出现 82 个中文字符；临时配置、未提交模型任务 |
-| 历史 Linux ARM64 容器验证 | 旧版 local.1 的 58/6 通过记录保留；当前修订容器結果另记 |
+| 当前 Linux AMD64 容器/CI | 69 项 Node、6 项容器内 Python、5 项生命周期检查通过；完整模拟交互/安装卸载通过 |
+| 历史 Linux ARM64 容器验证 | 旧版 local.1 的 58/6 通过记录另行保留 |
 | 临时环境与宿主检查 | 临时 VM/Docker/镜像已清理；所列配置、认证哈希及官方入口未变 |
 | 报告性质 | 工程技术报告；未经同行评审；未验证真实模型任务 |
 
@@ -112,7 +113,7 @@ bash run-container-test.command
 
 历史及复现容器使用禁网、无宿主机挂载、非 root、只读根文件系统。公开材料包含当次源码归档、哈希、实际日志、隔离和清理结论；私密备份及真实账户材料没有上传。[验证记录](VALIDATION.md) 区分实际结果与未测试范围。
 
-GitHub Actions 提供当前修订的受限容器复现；运行状态记录独立保存。此前 CI 的 macOS 路径假设已修正，未确认的新运行不会标为通过。
+[GitHub Actions 当前修订复现已通过](https://github.com/hepenghd-lab/stumbling-humanist/actions/runs/38152691631)：Ubuntu runner 中实际执行受限 Docker 容器，Node 69 项、容器内 Python 6 项、另行生命周期 5 项全部通过。运行日志与结果已公开；此前 CI 的 macOS 路径假设已修正。
 
 本机基础检查：
 

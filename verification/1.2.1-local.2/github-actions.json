@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "conclusion": "success",
+  "run_id": 38152691631,
+  "job_id": 114509215793,
+  "head_sha": "086bbd0799e08bb177dc950b71eae2346bf35f6d",
+  "html_url": "https://github.com/hepenghd-lab/stumbling-humanist/actions/runs/38152691631",
+  "runner": "ubuntu-24.04 (Linux AMD64)",
+  "started_at": "2026-10-11T15:46:32Z",
+  "completed_at": "2026-10-11T15:46:59Z",
+  "node_tests": {
+    "passed": 69,
+    "failed": 0,
+    "skipped": 0
+  },
+  "python_container_tests": 6,
+  "python_lifecycle_tests": 5,
+  "entries": 65,
+  "groups": 31,
+  "checks": [
+    "historical archive consistency",
+    "current revision/source/capture verification",
+    "lifecycle fixtures",
+    "actual restricted Docker container",
+    "full mock PTY",
+    "shell install/uninstall"
+  ],
+  "scope": "Actual GitHub runner container execution for this commit; real official CLI startup and recorded-task replay are separately documented. No new real model task."
+}

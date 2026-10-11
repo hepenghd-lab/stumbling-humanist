@@ -1,6 +1,6 @@
 # 验证记录
 
-当前修订为 **1.2.1-local.2**：本机 69 项 Node、11 项 Python 与词表（65 条、31 组）检查通过；8 份真实录制回放命中 11～20 次且控制序列未变；新版包装器实际启动官方 CLI，产生 82 个中文字符。新容器/CI 结果独立记录，见 [修复说明](ANALYSIS_RESPONSE.md) 及 [当前验证材料](verification/1.2.1-local.2/README.md)。
+当前修订为 **1.2.1-local.2**：本机 69 项 Node、11 项 Python 与词表（65 条、31 组）检查通过；8 份真实录制回放命中 11～20 次且控制序列未变；新版包装器实际启动官方 CLI，产生 82 个中文字符。新修订 Linux AMD64 的真实 Docker/CI 也已通过：容器内 Node 69 项、Python 6 项，另行生命周期 5 项。见 [修复说明](ANALYSIS_RESPONSE.md) 及 [当前验证材料](verification/1.2.1-local.2/README.md)。
 
 以下为 **local.1 的历史容器与本机检查**；保留记录不等于证明旧版实际 TUI 可用，也不作为此次修订的容器结果。
 

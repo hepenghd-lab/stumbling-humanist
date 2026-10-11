@@ -1,0 +1,393 @@
+2026-10-11T15:46:39.6403499Z ##[group]Run python3 scripts/container_test.py
+2026-10-11T15:46:39.6404563Z [36;1mpython3 scripts/container_test.py[0m
+2026-10-11T15:46:39.6469380Z shell: /usr/bin/bash -e {0}
+2026-10-11T15:46:39.6470191Z ##[endgroup]
+2026-10-11T15:46:39.6927121Z Prepared exact source context: 47 files, 184320 bytes.
+2026-10-11T15:46:40.5105996Z #0 building with "default" instance using docker driver
+2026-10-11T15:46:40.5106361Z 
+2026-10-11T15:46:40.5106463Z #1 [internal] load remote build context
+2026-10-11T15:46:40.6836303Z #1 DONE 0.0s
+2026-10-11T15:46:40.6836479Z 
+2026-10-11T15:46:40.6836761Z #2 copy /context /
+2026-10-11T15:46:40.6836955Z #2 DONE 0.0s
+2026-10-11T15:46:40.6837071Z 
+2026-10-11T15:46:40.6837281Z #3 [internal] load metadata for docker.io/library/node:24.21.0-bookworm-slim
+2026-10-11T15:46:40.6837593Z #3 ...
+2026-10-11T15:46:40.6837691Z 
+2026-10-11T15:46:40.6837824Z #4 [auth] library/node:pull token for registry-1.docker.io
+2026-10-11T15:46:40.6838103Z #4 DONE 0.0s
+2026-10-11T15:46:40.8329135Z 
+2026-10-11T15:46:40.8329735Z #3 [internal] load metadata for docker.io/library/node:24.21.0-bookworm-slim
+2026-10-11T15:46:41.2009430Z #3 DONE 0.8s
+2026-10-11T15:46:41.3131717Z 
+2026-10-11T15:46:41.3132861Z #5 [1/9] FROM docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+2026-10-11T15:46:41.3133692Z #5 resolve docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 done
+2026-10-11T15:46:41.3134382Z #5 sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 3.93kB / 3.93kB done
+2026-10-11T15:46:41.3134899Z #5 sha256:51b1100cc2a83d370c6a60952e3f2989c8a43159d0e38586e090f3b3326efefd 1.93kB / 1.93kB done
+2026-10-11T15:46:41.3135401Z #5 sha256:470015c1ab1577c19efce2e80cdad4afd9c682cf8f4dcf3dccae5abfd9113397 6.71kB / 6.71kB done
+2026-10-11T15:46:41.3135926Z #5 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 17.83MB / 28.25MB 0.1s
+2026-10-11T15:46:41.3136479Z #5 sha256:517d640e32835287653c4b15eb5d9f6bcf48e103baea4f7e29bac937002f649b 0B / 3.31kB 0.1s
+2026-10-11T15:46:41.3137199Z #5 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 0B / 50.86MB 0.1s
+2026-10-11T15:46:41.4136917Z #5 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 28.25MB / 28.25MB 0.2s
+2026-10-11T15:46:41.4137516Z #5 sha256:517d640e32835287653c4b15eb5d9f6bcf48e103baea4f7e29bac937002f649b 3.31kB / 3.31kB 0.1s done
+2026-10-11T15:46:41.4138168Z #5 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 16.78MB / 50.86MB 0.2s
+2026-10-11T15:46:41.5207612Z #5 sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 28.25MB / 28.25MB 0.3s done
+2026-10-11T15:46:41.5208647Z #5 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 41.94MB / 50.86MB 0.3s
+2026-10-11T15:46:41.5209503Z #5 sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 0B / 1.71MB 0.3s
+2026-10-11T15:46:41.5210409Z #5 sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0 0B / 447B 0.3s
+2026-10-11T15:46:41.5211190Z #5 extracting sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39
+2026-10-11T15:46:41.6232615Z #5 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 50.86MB / 50.86MB 0.4s
+2026-10-11T15:46:41.6234538Z #5 sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 1.71MB / 1.71MB 0.4s
+2026-10-11T15:46:41.6236223Z #5 sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0 447B / 447B 0.4s
+2026-10-11T15:46:41.8278641Z #5 sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 50.86MB / 50.86MB 0.6s done
+2026-10-11T15:46:41.8279608Z #5 sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 1.71MB / 1.71MB 0.6s done
+2026-10-11T15:46:41.8280446Z #5 sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0 447B / 447B 0.6s done
+2026-10-11T15:46:42.3736040Z #5 extracting sha256:7fd1ebe418b5079d4aa36f416af9b143d127bc75b0155d71cb5fd559b5e04d39 0.8s done
+2026-10-11T15:46:42.3739581Z #5 extracting sha256:517d640e32835287653c4b15eb5d9f6bcf48e103baea4f7e29bac937002f649b
+2026-10-11T15:46:42.5245588Z #5 extracting sha256:517d640e32835287653c4b15eb5d9f6bcf48e103baea4f7e29bac937002f649b done
+2026-10-11T15:46:47.7957476Z #5 extracting sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a
+2026-10-11T15:46:48.9162785Z #5 extracting sha256:11ffcabe0f772f0f1a9c80b4b290b5ec0de54f11c671f0fa10e5844f9b52d17a 1.0s done
+2026-10-11T15:46:49.7865932Z #5 extracting sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146
+2026-10-11T15:46:49.8939192Z #5 extracting sha256:1a0cf4b1ffc8dd659bb8c6e90471bc8fec24620e4fdb68bb2b6faa56154ae146 0.1s done
+2026-10-11T15:46:49.8940070Z #5 extracting sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0
+2026-10-11T15:46:50.0948509Z #5 extracting sha256:08489011619dfda982191cb9cc0418dc48ea3b1341588aeef534e4db0ab4d3d0 done
+2026-10-11T15:46:50.0949361Z #5 DONE 8.7s
+2026-10-11T15:46:50.0949489Z 
+2026-10-11T15:46:50.0949817Z #6 [2/9] RUN apt-get update     && apt-get install -y --no-install-recommends python3     && rm -rf /var/lib/apt/lists/*
+2026-10-11T15:46:50.1830276Z #6 0.239 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+2026-10-11T15:46:50.3504021Z #6 0.265 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+2026-10-11T15:46:50.3505305Z #6 0.275 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+2026-10-11T15:46:50.3506090Z #6 0.315 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+2026-10-11T15:46:50.3507067Z #6 0.406 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+2026-10-11T15:46:50.5011390Z #6 0.407 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [349 kB]
+2026-10-11T15:46:50.9965945Z #6 1.052 Fetched 9388 kB in 1s (10.6 MB/s)
+2026-10-11T15:46:51.3338144Z #6 1.052 Reading package lists...
+2026-10-11T15:46:51.6838227Z #6 1.404 Reading package lists...
+2026-10-11T15:46:51.7976380Z #6 1.747 Building dependency tree...
+2026-10-11T15:46:52.0341479Z #6 1.854 Reading state information...
+2026-10-11T15:46:52.0342064Z #6 1.939 The following additional packages will be installed:
+2026-10-11T15:46:52.0342697Z #6 1.939   libexpat1 libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3
+2026-10-11T15:46:52.0343459Z #6 1.939   libkrb5support0 libncursesw6 libnsl2 libpython3-stdlib libpython3.11-minimal
+2026-10-11T15:46:52.0344247Z #6 1.939   libpython3.11-stdlib libreadline8 libsqlite3-0 libssl3 libtirpc-common
+2026-10-11T15:46:52.0344968Z #6 1.939   libtirpc3 media-types python3-minimal python3.11 python3.11-minimal
+2026-10-11T15:46:52.0345517Z #6 1.939   readline-common
+2026-10-11T15:46:52.0345862Z #6 1.940 Suggested packages:
+2026-10-11T15:46:52.0346385Z #6 1.940   krb5-doc krb5-user python3-doc python3-tk python3-venv python3.11-venv
+2026-10-11T15:46:52.0347264Z #6 1.940   python3.11-doc binutils binfmt-support readline-doc
+2026-10-11T15:46:52.0347762Z #6 1.940 Recommended packages:
+2026-10-11T15:46:52.0348152Z #6 1.940   krb5-locales libgpm2 ca-certificates
+2026-10-11T15:46:52.0515330Z #6 2.107 The following NEW packages will be installed:
+2026-10-11T15:46:52.1924616Z #6 2.107   libexpat1 libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3
+2026-10-11T15:46:52.1925484Z #6 2.107   libkrb5support0 libncursesw6 libnsl2 libpython3-stdlib libpython3.11-minimal
+2026-10-11T15:46:52.1926485Z #6 2.108   libpython3.11-stdlib libreadline8 libsqlite3-0 libssl3 libtirpc-common
+2026-10-11T15:46:52.1927292Z #6 2.108   libtirpc3 media-types python3 python3-minimal python3.11 python3.11-minimal
+2026-10-11T15:46:52.1927634Z #6 2.108   readline-common
+2026-10-11T15:46:52.1927912Z #6 2.124 0 upgraded, 22 newly installed, 0 to remove and 1 not upgraded.
+2026-10-11T15:46:52.1928221Z #6 2.124 Need to get 9417 kB of archives.
+2026-10-11T15:46:52.1928898Z #6 2.124 After this operation, 33.5 MB of additional disk space will be used.
+2026-10-11T15:46:52.1929454Z #6 2.124 Get:1 http://deb.debian.org/debian-security bookworm-security/main amd64 libssl3 amd64 3.0.22-1~deb12u1 [2039 kB]
+2026-10-11T15:46:52.1930108Z #6 2.139 Get:2 http://deb.debian.org/debian-security bookworm-security/main amd64 libpython3.11-minimal amd64 3.11.2-6+deb12u9 [821 kB]
+2026-10-11T15:46:52.1930742Z #6 2.142 Get:3 http://deb.debian.org/debian-security bookworm-security/main amd64 libexpat1 amd64 2.5.0-1+deb12u4 [106 kB]
+2026-10-11T15:46:52.1931363Z #6 2.142 Get:4 http://deb.debian.org/debian-security bookworm-security/main amd64 python3.11-minimal amd64 3.11.2-6+deb12u9 [2055 kB]
+2026-10-11T15:46:52.1931949Z #6 2.146 Get:5 http://deb.debian.org/debian bookworm/main amd64 python3-minimal amd64 3.11.2-1+b1 [26.3 kB]
+2026-10-11T15:46:52.1932461Z #6 2.147 Get:6 http://deb.debian.org/debian bookworm/main amd64 media-types all 10.0.0 [26.1 kB]
+2026-10-11T15:46:52.1932942Z #6 2.148 Get:7 http://deb.debian.org/debian bookworm/main amd64 libncursesw6 amd64 6.4-4 [134 kB]
+2026-10-11T15:46:52.1933919Z #6 2.148 Get:8 http://deb.debian.org/debian bookworm/main amd64 libkrb5support0 amd64 1.20.1-2+deb12u5 [33.2 kB]
+2026-10-11T15:46:52.1934695Z #6 2.149 Get:9 http://deb.debian.org/debian bookworm/main amd64 libk5crypto3 amd64 1.20.1-2+deb12u5 [79.7 kB]
+2026-10-11T15:46:52.1935214Z #6 2.149 Get:10 http://deb.debian.org/debian bookworm/main amd64 libkeyutils1 amd64 1.6.3-2 [8808 B]
+2026-10-11T15:46:52.1935744Z #6 2.149 Get:11 http://deb.debian.org/debian bookworm/main amd64 libkrb5-3 amd64 1.20.1-2+deb12u5 [332 kB]
+2026-10-11T15:46:52.1936255Z #6 2.150 Get:12 http://deb.debian.org/debian bookworm/main amd64 libgssapi-krb5-2 amd64 1.20.1-2+deb12u5 [135 kB]
+2026-10-11T15:46:52.1936976Z #6 2.151 Get:13 http://deb.debian.org/debian bookworm/main amd64 libtirpc-common all 1.3.3+ds-1 [14.0 kB]
+2026-10-11T15:46:52.1937480Z #6 2.151 Get:14 http://deb.debian.org/debian bookworm/main amd64 libtirpc3 amd64 1.3.3+ds-1 [85.2 kB]
+2026-10-11T15:46:52.1937952Z #6 2.151 Get:15 http://deb.debian.org/debian bookworm/main amd64 libnsl2 amd64 1.3.0-2 [39.5 kB]
+2026-10-11T15:46:52.1938426Z #6 2.152 Get:16 http://deb.debian.org/debian bookworm/main amd64 readline-common all 8.2-1.3 [69.0 kB]
+2026-10-11T15:46:52.1938900Z #6 2.152 Get:17 http://deb.debian.org/debian bookworm/main amd64 libreadline8 amd64 8.2-1.3 [166 kB]
+2026-10-11T15:46:52.1939390Z #6 2.153 Get:18 http://deb.debian.org/debian bookworm/main amd64 libsqlite3-0 amd64 3.40.1-2+deb12u2 [839 kB]
+2026-10-11T15:46:52.1939983Z #6 2.157 Get:19 http://deb.debian.org/debian-security bookworm-security/main amd64 libpython3.11-stdlib amd64 3.11.2-6+deb12u9 [1798 kB]
+2026-10-11T15:46:52.1940625Z #6 2.161 Get:20 http://deb.debian.org/debian-security bookworm-security/main amd64 python3.11 amd64 3.11.2-6+deb12u9 [575 kB]
+2026-10-11T15:46:52.1941187Z #6 2.162 Get:21 http://deb.debian.org/debian bookworm/main amd64 libpython3-stdlib amd64 3.11.2-1+b1 [9312 B]
+2026-10-11T15:46:52.1941672Z #6 2.162 Get:22 http://deb.debian.org/debian bookworm/main amd64 python3 amd64 3.11.2-1+b1 [26.3 kB]
+2026-10-11T15:46:52.1942123Z #6 2.248 debconf: delaying package configuration, since apt-utils is not installed
+2026-10-11T15:46:52.3272121Z #6 2.269 Fetched 9417 kB in 0s (188 MB/s)
+2026-10-11T15:46:52.3272585Z #6 2.280 Selecting previously unselected package libssl3:amd64.
+2026-10-11T15:46:52.3272894Z #6 2.280 (Reading database ... 
+2026-10-11T15:46:52.3273090Z (Reading database ... 5%
+2026-10-11T15:46:52.3273282Z (Reading database ... 10%
+2026-10-11T15:46:52.3273470Z (Reading database ... 15%
+2026-10-11T15:46:52.3273651Z (Reading database ... 20%
+2026-10-11T15:46:52.3273833Z (Reading database ... 25%
+2026-10-11T15:46:52.3274009Z (Reading database ... 30%
+2026-10-11T15:46:52.3274184Z (Reading database ... 35%
+2026-10-11T15:46:52.3274363Z (Reading database ... 40%
+2026-10-11T15:46:52.3274553Z (Reading database ... 45%
+2026-10-11T15:46:52.3274728Z (Reading database ... 50%
+2026-10-11T15:46:52.3274907Z (Reading database ... 55%
+2026-10-11T15:46:52.3275330Z (Reading database ... 60%
+2026-10-11T15:46:52.3275519Z (Reading database ... 65%
+2026-10-11T15:46:52.3275695Z (Reading database ... 70%
+2026-10-11T15:46:52.3275868Z (Reading database ... 75%
+2026-10-11T15:46:52.3276043Z (Reading database ... 80%
+2026-10-11T15:46:52.3276218Z (Reading database ... 85%
+2026-10-11T15:46:52.3276387Z (Reading database ... 90%
+2026-10-11T15:46:52.3276934Z (Reading database ... 95%
+2026-10-11T15:46:52.3277171Z (Reading database ... 100%
+2026-10-11T15:46:52.3277510Z (Reading database ... 6096 files and directories currently installed.)
+2026-10-11T15:46:52.3277985Z #6 2.285 Preparing to unpack .../libssl3_3.0.22-1~deb12u1_amd64.deb ...
+2026-10-11T15:46:52.3278420Z #6 2.287 Unpacking libssl3:amd64 (3.0.22-1~deb12u1) ...
+2026-10-11T15:46:52.3278893Z #6 2.383 Selecting previously unselected package libpython3.11-minimal:amd64.
+2026-10-11T15:46:52.4439838Z #6 2.384 Preparing to unpack .../libpython3.11-minimal_3.11.2-6+deb12u9_amd64.deb ...
+2026-10-11T15:46:52.4440500Z #6 2.385 Unpacking libpython3.11-minimal:amd64 (3.11.2-6+deb12u9) ...
+2026-10-11T15:46:52.4441271Z #6 2.467 Selecting previously unselected package libexpat1:amd64.
+2026-10-11T15:46:52.4441753Z #6 2.468 Preparing to unpack .../libexpat1_2.5.0-1+deb12u4_amd64.deb ...
+2026-10-11T15:46:52.4442168Z #6 2.469 Unpacking libexpat1:amd64 (2.5.0-1+deb12u4) ...
+2026-10-11T15:46:52.4442606Z #6 2.500 Selecting previously unselected package python3.11-minimal.
+2026-10-11T15:46:52.5667859Z #6 2.501 Preparing to unpack .../python3.11-minimal_3.11.2-6+deb12u9_amd64.deb ...
+2026-10-11T15:46:52.5668426Z #6 2.504 Unpacking python3.11-minimal (3.11.2-6+deb12u9) ...
+2026-10-11T15:46:52.5668837Z #6 2.623 Setting up libssl3:amd64 (3.0.22-1~deb12u1) ...
+2026-10-11T15:46:52.7230265Z #6 2.624 Setting up libpython3.11-minimal:amd64 (3.11.2-6+deb12u9) ...
+2026-10-11T15:46:52.7230837Z #6 2.627 Setting up libexpat1:amd64 (2.5.0-1+deb12u4) ...
+2026-10-11T15:46:52.7231318Z #6 2.629 Setting up python3.11-minimal (3.11.2-6+deb12u9) ...
+2026-10-11T15:46:53.0134195Z #6 3.069 Selecting previously unselected package python3-minimal.
+2026-10-11T15:46:53.1248574Z #6 3.069 (Reading database ... 
+2026-10-11T15:46:53.1248930Z (Reading database ... 5%
+2026-10-11T15:46:53.1249192Z (Reading database ... 10%
+2026-10-11T15:46:53.1249494Z (Reading database ... 15%
+2026-10-11T15:46:53.1249735Z (Reading database ... 20%
+2026-10-11T15:46:53.1249975Z (Reading database ... 25%
+2026-10-11T15:46:53.1250219Z (Reading database ... 30%
+2026-10-11T15:46:53.1250480Z (Reading database ... 35%
+2026-10-11T15:46:53.1250746Z (Reading database ... 40%
+2026-10-11T15:46:53.1251020Z (Reading database ... 45%
+2026-10-11T15:46:53.1251305Z (Reading database ... 50%
+2026-10-11T15:46:53.1251590Z (Reading database ... 55%
+2026-10-11T15:46:53.1251870Z (Reading database ... 60%
+2026-10-11T15:46:53.1252145Z (Reading database ... 65%
+2026-10-11T15:46:53.1252470Z (Reading database ... 70%
+2026-10-11T15:46:53.1252781Z (Reading database ... 75%
+2026-10-11T15:46:53.1253018Z (Reading database ... 80%
+2026-10-11T15:46:53.1253362Z (Reading database ... 85%
+2026-10-11T15:46:53.1253596Z (Reading database ... 90%
+2026-10-11T15:46:53.1253847Z (Reading database ... 95%
+2026-10-11T15:46:53.1254172Z (Reading database ... 100%
+2026-10-11T15:46:53.1254460Z (Reading database ... 6424 files and directories currently installed.)
+2026-10-11T15:46:53.1255009Z #6 3.073 Preparing to unpack .../00-python3-minimal_3.11.2-1+b1_amd64.deb ...
+2026-10-11T15:46:53.1255486Z #6 3.074 Unpacking python3-minimal (3.11.2-1+b1) ...
+2026-10-11T15:46:53.1255776Z #6 3.086 Selecting previously unselected package media-types.
+2026-10-11T15:46:53.1256101Z #6 3.086 Preparing to unpack .../01-media-types_10.0.0_all.deb ...
+2026-10-11T15:46:53.1256376Z #6 3.087 Unpacking media-types (10.0.0) ...
+2026-10-11T15:46:53.1256998Z #6 3.139 Selecting previously unselected package libncursesw6:amd64.
+2026-10-11T15:46:53.1257442Z #6 3.140 Preparing to unpack .../02-libncursesw6_6.4-4_amd64.deb ...
+2026-10-11T15:46:53.1257775Z #6 3.141 Unpacking libncursesw6:amd64 (6.4-4) ...
+2026-10-11T15:46:53.1258322Z #6 3.167 Selecting previously unselected package libkrb5support0:amd64.
+2026-10-11T15:46:53.1258914Z #6 3.168 Preparing to unpack .../03-libkrb5support0_1.20.1-2+deb12u5_amd64.deb ...
+2026-10-11T15:46:53.1259441Z #6 3.169 Unpacking libkrb5support0:amd64 (1.20.1-2+deb12u5) ...
+2026-10-11T15:46:53.1259984Z #6 3.180 Selecting previously unselected package libk5crypto3:amd64.
+2026-10-11T15:46:53.2333152Z #6 3.182 Preparing to unpack .../04-libk5crypto3_1.20.1-2+deb12u5_amd64.deb ...
+2026-10-11T15:46:53.2333693Z #6 3.182 Unpacking libk5crypto3:amd64 (1.20.1-2+deb12u5) ...
+2026-10-11T15:46:53.2334067Z #6 3.196 Selecting previously unselected package libkeyutils1:amd64.
+2026-10-11T15:46:53.2334452Z #6 3.197 Preparing to unpack .../05-libkeyutils1_1.6.3-2_amd64.deb ...
+2026-10-11T15:46:53.2334760Z #6 3.198 Unpacking libkeyutils1:amd64 (1.6.3-2) ...
+2026-10-11T15:46:53.2335059Z #6 3.208 Selecting previously unselected package libkrb5-3:amd64.
+2026-10-11T15:46:53.2335434Z #6 3.209 Preparing to unpack .../06-libkrb5-3_1.20.1-2+deb12u5_amd64.deb ...
+2026-10-11T15:46:53.2336007Z #6 3.209 Unpacking libkrb5-3:amd64 (1.20.1-2+deb12u5) ...
+2026-10-11T15:46:53.2336326Z #6 3.269 Selecting previously unselected package libgssapi-krb5-2:amd64.
+2026-10-11T15:46:53.2336921Z #6 3.271 Preparing to unpack .../07-libgssapi-krb5-2_1.20.1-2+deb12u5_amd64.deb ...
+2026-10-11T15:46:53.2337271Z #6 3.272 Unpacking libgssapi-krb5-2:amd64 (1.20.1-2+deb12u5) ...
+2026-10-11T15:46:53.2337592Z #6 3.289 Selecting previously unselected package libtirpc-common.
+2026-10-11T15:46:53.3366862Z #6 3.290 Preparing to unpack .../08-libtirpc-common_1.3.3+ds-1_all.deb ...
+2026-10-11T15:46:53.3367480Z #6 3.291 Unpacking libtirpc-common (1.3.3+ds-1) ...
+2026-10-11T15:46:53.3368080Z #6 3.393 Selecting previously unselected package libtirpc3:amd64.
+2026-10-11T15:46:53.4398836Z #6 3.394 Preparing to unpack .../09-libtirpc3_1.3.3+ds-1_amd64.deb ...
+2026-10-11T15:46:53.4399368Z #6 3.396 Unpacking libtirpc3:amd64 (1.3.3+ds-1) ...
+2026-10-11T15:46:53.4399720Z #6 3.412 Selecting previously unselected package libnsl2:amd64.
+2026-10-11T15:46:53.4400061Z #6 3.413 Preparing to unpack .../10-libnsl2_1.3.0-2_amd64.deb ...
+2026-10-11T15:46:53.4400412Z #6 3.414 Unpacking libnsl2:amd64 (1.3.0-2) ...
+2026-10-11T15:46:53.4400987Z #6 3.495 Selecting previously unselected package readline-common.
+2026-10-11T15:46:53.6266218Z #6 3.496 Preparing to unpack .../11-readline-common_8.2-1.3_all.deb ...
+2026-10-11T15:46:53.6266843Z #6 3.497 Unpacking readline-common (8.2-1.3) ...
+2026-10-11T15:46:53.6267268Z #6 3.511 Selecting previously unselected package libreadline8:amd64.
+2026-10-11T15:46:53.6267756Z #6 3.512 Preparing to unpack .../12-libreadline8_8.2-1.3_amd64.deb ...
+2026-10-11T15:46:53.6268184Z #6 3.512 Unpacking libreadline8:amd64 (8.2-1.3) ...
+2026-10-11T15:46:53.6268594Z #6 3.530 Selecting previously unselected package libsqlite3-0:amd64.
+2026-10-11T15:46:53.6269086Z #6 3.531 Preparing to unpack .../13-libsqlite3-0_3.40.1-2+deb12u2_amd64.deb ...
+2026-10-11T15:46:53.6269598Z #6 3.532 Unpacking libsqlite3-0:amd64 (3.40.1-2+deb12u2) ...
+2026-10-11T15:46:53.6270058Z #6 3.573 Selecting previously unselected package libpython3.11-stdlib:amd64.
+2026-10-11T15:46:53.6270606Z #6 3.574 Preparing to unpack .../14-libpython3.11-stdlib_3.11.2-6+deb12u9_amd64.deb ...
+2026-10-11T15:46:53.6271144Z #6 3.574 Unpacking libpython3.11-stdlib:amd64 (3.11.2-6+deb12u9) ...
+2026-10-11T15:46:53.6271577Z #6 3.683 Selecting previously unselected package python3.11.
+2026-10-11T15:46:53.7865828Z #6 3.684 Preparing to unpack .../15-python3.11_3.11.2-6+deb12u9_amd64.deb ...
+2026-10-11T15:46:53.7866373Z #6 3.685 Unpacking python3.11 (3.11.2-6+deb12u9) ...
+2026-10-11T15:46:53.7867039Z #6 3.715 Selecting previously unselected package libpython3-stdlib:amd64.
+2026-10-11T15:46:53.7867628Z #6 3.716 Preparing to unpack .../16-libpython3-stdlib_3.11.2-1+b1_amd64.deb ...
+2026-10-11T15:46:53.7868136Z #6 3.716 Unpacking libpython3-stdlib:amd64 (3.11.2-1+b1) ...
+2026-10-11T15:46:53.7868838Z #6 3.739 Setting up python3-minimal (3.11.2-1+b1) ...
+2026-10-11T15:46:53.7869272Z #6 3.842 Selecting previously unselected package python3.
+2026-10-11T15:46:53.9844434Z #6 3.842 (Reading database ... 
+2026-10-11T15:46:53.9845097Z (Reading database ... 5%
+2026-10-11T15:46:53.9845618Z (Reading database ... 10%
+2026-10-11T15:46:53.9845929Z (Reading database ... 15%
+2026-10-11T15:46:53.9846230Z (Reading database ... 20%
+2026-10-11T15:46:53.9846617Z (Reading database ... 25%
+2026-10-11T15:46:53.9846890Z (Reading database ... 30%
+2026-10-11T15:46:53.9847157Z (Reading database ... 35%
+2026-10-11T15:46:53.9847425Z (Reading database ... 40%
+2026-10-11T15:46:53.9847696Z (Reading database ... 45%
+2026-10-11T15:46:53.9847967Z (Reading database ... 50%
+2026-10-11T15:46:53.9848236Z (Reading database ... 55%
+2026-10-11T15:46:53.9848510Z (Reading database ... 60%
+2026-10-11T15:46:53.9848789Z (Reading database ... 65%
+2026-10-11T15:46:53.9849060Z (Reading database ... 70%
+2026-10-11T15:46:53.9849297Z (Reading database ... 75%
+2026-10-11T15:46:53.9849721Z (Reading database ... 80%
+2026-10-11T15:46:53.9849893Z (Reading database ... 85%
+2026-10-11T15:46:53.9850081Z (Reading database ... 90%
+2026-10-11T15:46:53.9850274Z (Reading database ... 95%
+2026-10-11T15:46:53.9850454Z (Reading database ... 100%
+2026-10-11T15:46:53.9850717Z (Reading database ... 6932 files and directories currently installed.)
+2026-10-11T15:46:53.9851092Z #6 3.847 Preparing to unpack .../python3_3.11.2-1+b1_amd64.deb ...
+2026-10-11T15:46:53.9851392Z #6 3.849 Unpacking python3 (3.11.2-1+b1) ...
+2026-10-11T15:46:53.9851643Z #6 3.863 Setting up media-types (10.0.0) ...
+2026-10-11T15:46:53.9851889Z #6 3.865 Setting up libkeyutils1:amd64 (1.6.3-2) ...
+2026-10-11T15:46:53.9852145Z #6 3.867 Setting up libtirpc-common (1.3.3+ds-1) ...
+2026-10-11T15:46:53.9852412Z #6 3.869 Setting up libsqlite3-0:amd64 (3.40.1-2+deb12u2) ...
+2026-10-11T15:46:53.9852710Z #6 3.870 Setting up libkrb5support0:amd64 (1.20.1-2+deb12u5) ...
+2026-10-11T15:46:53.9852991Z #6 3.872 Setting up libncursesw6:amd64 (6.4-4) ...
+2026-10-11T15:46:53.9853260Z #6 3.874 Setting up libk5crypto3:amd64 (1.20.1-2+deb12u5) ...
+2026-10-11T15:46:53.9853534Z #6 3.875 Setting up libkrb5-3:amd64 (1.20.1-2+deb12u5) ...
+2026-10-11T15:46:53.9853790Z #6 3.877 Setting up readline-common (8.2-1.3) ...
+2026-10-11T15:46:53.9854044Z #6 3.880 Setting up libreadline8:amd64 (8.2-1.3) ...
+2026-10-11T15:46:53.9854315Z #6 3.882 Setting up libgssapi-krb5-2:amd64 (1.20.1-2+deb12u5) ...
+2026-10-11T15:46:53.9854589Z #6 3.884 Setting up libtirpc3:amd64 (1.3.3+ds-1) ...
+2026-10-11T15:46:53.9854829Z #6 3.885 Setting up libnsl2:amd64 (1.3.0-2) ...
+2026-10-11T15:46:53.9855109Z #6 3.887 Setting up libpython3.11-stdlib:amd64 (3.11.2-6+deb12u9) ...
+2026-10-11T15:46:53.9855420Z #6 3.888 Setting up libpython3-stdlib:amd64 (3.11.2-1+b1) ...
+2026-10-11T15:46:53.9855707Z #6 3.890 Setting up python3.11 (3.11.2-6+deb12u9) ...
+2026-10-11T15:46:54.3873778Z #6 4.443 Setting up python3 (3.11.2-1+b1) ...
+2026-10-11T15:46:54.5970338Z #6 4.447 running python rtupdate hooks for python3.11...
+2026-10-11T15:46:54.5970727Z #6 4.448 running python post-rtupdate hooks for python3.11...
+2026-10-11T15:46:54.5971054Z #6 4.503 Processing triggers for libc-bin (2.36-9+deb12u14) ...
+2026-10-11T15:46:54.7687176Z #6 DONE 4.8s
+2026-10-11T15:46:54.9908647Z 
+2026-10-11T15:46:54.9909387Z #7 [3/9] WORKDIR /opt/codex-zh-test
+2026-10-11T15:46:54.9909973Z #7 DONE 0.0s
+2026-10-11T15:46:54.9910271Z 
+2026-10-11T15:46:54.9910747Z #8 [4/9] COPY package.json package-lock.json install.sh uninstall.sh LICENSE ./
+2026-10-11T15:46:54.9911434Z #8 DONE 0.0s
+2026-10-11T15:46:54.9911750Z 
+2026-10-11T15:46:54.9912048Z #9 [5/9] COPY bin/ ./bin/
+2026-10-11T15:46:54.9912498Z #9 DONE 0.0s
+2026-10-11T15:46:54.9912766Z 
+2026-10-11T15:46:54.9913066Z #10 [6/9] COPY lib/ ./lib/
+2026-10-11T15:46:54.9913545Z #10 DONE 0.0s
+2026-10-11T15:46:54.9913807Z 
+2026-10-11T15:46:54.9914116Z #11 [7/9] COPY data/ ./data/
+2026-10-11T15:46:54.9914572Z #11 DONE 0.0s
+2026-10-11T15:46:54.9914840Z 
+2026-10-11T15:46:54.9915489Z #12 [8/9] COPY scripts/ ./scripts/
+2026-10-11T15:46:54.9916011Z #12 DONE 0.0s
+2026-10-11T15:46:54.9916279Z 
+2026-10-11T15:46:54.9923317Z #13 [9/9] COPY tests/ ./tests/
+2026-10-11T15:46:54.9923872Z #13 DONE 0.0s
+2026-10-11T15:46:54.9924150Z 
+2026-10-11T15:46:54.9924394Z #14 exporting to image
+2026-10-11T15:46:54.9924808Z #14 exporting layers
+2026-10-11T15:46:55.6757174Z #14 exporting layers 0.8s done
+2026-10-11T15:46:55.6885941Z #14 writing image sha256:ae690fc54d6c289c587c268abdb46148de3b8fbbfb3e8214954f31f4094cae05 done
+2026-10-11T15:46:55.6886473Z #14 naming to docker.io/library/codex-zh-local-test:1.2.1-local.2 done
+2026-10-11T15:46:55.6887063Z #14 DONE 0.8s
+2026-10-11T15:46:56.9148559Z Container isolation verified: {"passed": true, "uid": 1000, "network": "loopback only", "root_filesystem": "read-only", "temporary_storage": "tmpfs", "effective_capabilities": 0, "no_new_privileges": true}
+2026-10-11T15:46:56.9149489Z v24.21.0
+2026-10-11T15:46:56.9149684Z Python 3.11.2
+2026-10-11T15:46:56.9150290Z ✔ splits text around SGR (1.272167ms)
+2026-10-11T15:46:56.9151282Z ✔ CSI sequences pass through verbatim (0.136762ms)
+2026-10-11T15:46:56.9151979Z ✔ OSC sequences pass through verbatim (0.11449ms)
+2026-10-11T15:46:56.9152655Z ✔ flushText keeps requested tail (0.163172ms)
+2026-10-11T15:46:56.9153366Z ✔ charset and single-char escapes (0.122221ms)
+2026-10-11T15:46:56.9154228Z ✔ non-interactive CLI preserves stdout JSON, stderr, args and exit status (46.042065ms)
+2026-10-11T15:46:56.9155248Z ✔ retired config APIs cannot modify an existing user configuration (2.196366ms)
+2026-10-11T15:46:56.9156171Z ✔ retired APIs cannot create a configuration file (0.13495ms)
+2026-10-11T15:46:56.9157029Z ✔ isShadowShim detects the shadow marker (0.858934ms)
+2026-10-11T15:46:56.9157744Z ✔ isShadowShim returns false for missing files (0.241939ms)
+2026-10-11T15:46:56.9158350Z ✔ detects /chinese (1.328681ms)
+2026-10-11T15:46:56.9158833Z ✔ detects /english (0.241138ms)
+2026-10-11T15:46:56.9159406Z ✔ ignores ordinary input and inline args (0.122662ms)
+2026-10-11T15:46:56.9160238Z ✔ /language and /lang report null language (help command) (0.165976ms)
+2026-10-11T15:46:56.9160791Z ✔ backspace edits the line (0.159617ms)
+2026-10-11T15:46:56.9161201Z ✔ ctrl-c resets the line buffer (0.111455ms)
+2026-10-11T15:46:56.9161861Z ✔ install/uninstall manages only independent owned links and preserves config (29.228392ms)
+2026-10-11T15:46:56.9162678Z ✔ an unrelated existing launcher is never overwritten, even partially (1.012422ms)
+2026-10-11T15:46:56.9163334Z ✔ uninstall preserves a user-replaced launcher (1.220069ms)
+2026-10-11T15:46:56.9163812Z ✔ longest literal match wins (1.341269ms)
+2026-10-11T15:46:56.9164273Z ✔ word entry does not match inside longer word (1.015877ms)
+2026-10-11T15:46:56.9164808Z ✔ fragment translation preserves display width (0.194839ms)
+2026-10-11T15:46:56.9165281Z ✔ pad:false does not pad (0.154469ms)
+2026-10-11T15:46:56.9165706Z ✔ dynamic patterns with placeholders (0.610685ms)
+2026-10-11T15:46:56.9166227Z ✔ longer pattern beats shorter literal prefix (0.27001ms)
+2026-10-11T15:46:56.9166955Z ✔ patterns match mid-run and trailing placeholders are greedy (0.41144ms)
+2026-10-11T15:46:56.9167557Z ✔ punctuation-only continuation is handled (0.153297ms)
+2026-10-11T15:46:56.9168220Z ✔ POSIX transport creates a real TTY and preserves ANSI/Unicode/exit code (63.427836ms)
+2026-10-11T15:46:56.9168878Z ✔ terminal resize reaches the child process (46.879181ms)
+2026-10-11T15:46:56.9169482Z ✔ signals terminate the child and preserve the signal number (56.107526ms)
+2026-10-11T15:46:56.9170130Z ✔ large terminal output is drained without truncation (44.594528ms)
+2026-10-11T15:46:56.9170755Z ✔ UTF-8 input and output retain split multibyte characters (47.9978ms)
+2026-10-11T15:46:56.9171361Z ✔ redirected input or output bypasses translation (0.636064ms)
+2026-10-11T15:46:56.9172435Z ✔ exec, protocol services, help, version and login bypass even inside a TTY (0.164444ms)
+2026-10-11T15:46:56.9173435Z ✔ ordinary chat, resume/fork and literal prompts remain interactive (0.138796ms)
+2026-10-11T15:46:56.9174679Z ✔ setLanguage persists zh/en and defaults to zh-CN (1.369351ms)
+2026-10-11T15:46:56.9175683Z ✔ approved status meanings are translated without changing display columns (3.376256ms)
+2026-10-11T15:46:56.9176818Z ✔ short Run/Ran labels borrow only existing padding across styling (2.490633ms)
+2026-10-11T15:46:56.9177767Z ✔ insufficient padding and cursor movement retain original text and controls (15.129345ms)
+2026-10-11T15:46:56.9178635Z ✔ all approved A–E elements are represented, including omitted variants (0.297261ms)
+2026-10-11T15:46:56.9179359Z ✔ dynamic counts, exit codes, percent and error details remain exact (1.997842ms)
+2026-10-11T15:46:56.9180026Z ✔ obvious code, JSON, commands and paths are never translated (1.28108ms)
+2026-10-11T15:46:56.9180622Z ✔ code protection survives ANSI style boundaries (0.303701ms)
+2026-10-11T15:46:56.9181265Z ✔ fenced code stays untouched and following UI labels can translate (0.285444ms)
+2026-10-11T15:46:56.9182058Z ✔ a phrase spanning chunks can translate, but arbitrary substring matches cannot (0.419953ms)
+2026-10-11T15:46:56.9183148Z ✔ plain prompts and short labels flush on the first bounded timer (0.488214ms)
+2026-10-11T15:46:56.9183832Z ✔ a real timer releases a newline-free prompt before stream end (80.418781ms)
+2026-10-11T15:46:56.9184474Z ✔ continuous large output is bounded and unchanged (17.672276ms)
+2026-10-11T15:46:56.9185194Z ✔ disabled translation and end are byte preserving and idempotent (0.563776ms)
+2026-10-11T15:46:56.9186050Z ✔ ordinary standalone allowlisted words remain an explicit residual ambiguity (0.257231ms)
+2026-10-11T15:46:56.9187104Z ✔ numbered approval rows retain their option number and keyboard key (0.662132ms)
+2026-10-11T15:46:56.9187795Z ✔ ellipsis and compact footer variants remain translatable (0.467203ms)
+2026-10-11T15:46:56.9188505Z ✔ switching to English does not translate an already buffered short label (0.213617ms)
+2026-10-11T15:46:56.9189331Z ✔ absolute-position repaint recovers after version and code rows without LF (5.777898ms)
+2026-10-11T15:46:56.9190220Z ✔ composed action row translates only label, retaining command bytes and separation (0.758235ms)
+2026-10-11T15:46:56.9191073Z ✔ same-row horizontal cursor movement does not unlock styled code (0.954595ms)
+2026-10-11T15:46:56.9191737Z ✔ backward CUP within a code row also retains protection (0.382387ms)
+2026-10-11T15:46:56.9192340Z ✔ SGR per-character shimmer can match a whole UI label (3.821186ms)
+2026-10-11T15:46:56.9192957Z ✔ known multi-hint footer is matched as a UI structure (0.567972ms)
+2026-10-11T15:46:56.9193643Z ✔ prose and JSON mentioning composed labels are not substring-translated (1.155994ms)
+2026-10-11T15:46:56.9194374Z ✔ real official CLI startup capture translates beyond the version row (6.611779ms)
+2026-10-11T15:46:56.9195094Z ✔ analyst real task recording retains commands and keys in rendered cells (2.44101ms)
+2026-10-11T15:46:56.9195897Z ✔ wide glyph crossing a cursor boundary retains the original fragment (0.748701ms)
+2026-10-11T15:46:56.9196805Z ✔ timer flush followed by another row does not retain code protection (0.398781ms)
+2026-10-11T15:46:56.9197328Z ✔ ASCII width (1.113501ms)
+2026-10-11T15:46:56.9197623Z ✔ CJK width (0.231624ms)
+2026-10-11T15:46:56.9197921Z ✔ mixed width (0.18205ms)
+2026-10-11T15:46:56.9198275Z ✔ combining marks are zero-width (0.164844ms)
+2026-10-11T15:46:56.9198687Z ✔ padToWidth pads shorter text (0.185174ms)
+2026-10-11T15:46:56.9199059Z ℹ tests 69
+2026-10-11T15:46:56.9199297Z ℹ suites 0
+2026-10-11T15:46:56.9199525Z ℹ pass 69
+2026-10-11T15:46:56.9199746Z ℹ fail 0
+2026-10-11T15:46:56.9199973Z ℹ cancelled 0
+2026-10-11T15:46:56.9200214Z ℹ skipped 0
+2026-10-11T15:46:56.9200462Z ℹ todo 0
+2026-10-11T15:46:56.9200733Z ℹ duration_ms 571.892272
+2026-10-11T15:46:56.9201330Z Validated 65 entries, 31 approved groups; 3 short labels use adjacent padding or retain English.
+2026-10-11T15:46:56.9201881Z Python syntax checks passed.
+2026-10-11T15:46:56.9202780Z Full frontend PTY smoke passed: Chinese labels/input, protected code/JSON, option keys, exit 17.
+2026-10-11T15:46:56.9203344Z Python 3.11.2
+2026-10-11T15:46:56.9203802Z Validated 65 entries, 31 approved groups; 3 short labels use adjacent padding or retain English.
+2026-10-11T15:46:56.9204760Z ["/tmp/codex-container-install-yvfoh366/bin/codex-zh-local","/tmp/codex-container-install-yvfoh366/bin/codex-zh-local-doctor"]
+2026-10-11T15:46:56.9205726Z 已安装独立 codex-zh-local 入口。官方 codex 和 Codex 配置未被修改。
+2026-10-11T15:46:56.9206786Z {"removed":["/tmp/codex-container-install-yvfoh366/bin/codex-zh-local","/tmp/codex-container-install-yvfoh366/bin/codex-zh-local-doctor"],"retained":[]}
+2026-10-11T15:46:56.9207755Z 卸载完成，源码和设置保留；官方 codex 与 ~/.codex 未被修改。
+2026-10-11T15:46:56.9208242Z Shell install/uninstall passed; synthetic CLI/config/auth/profile hashes unchanged.
+2026-10-11T15:46:56.9208926Z CONTAINER_TEST_PASSED: isolation, unit tests, full PTY and install/uninstall.
+2026-10-11T15:46:56.9209416Z ......
+2026-10-11T15:46:56.9209749Z ----------------------------------------------------------------------
+2026-10-11T15:46:56.9210346Z Ran 6 tests in 0.017s
+2026-10-11T15:46:56.9210538Z 
+2026-10-11T15:46:56.9210631Z OK
