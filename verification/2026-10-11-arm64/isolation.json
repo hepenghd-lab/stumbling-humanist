@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "host_mounts": [],
+  "network": "none",
+  "user": "1000:1000",
+  "readonly_root": true,
+  "memory_bytes": 536870912,
+  "pids_limit": 256
+}

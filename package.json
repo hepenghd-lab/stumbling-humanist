@@ -1,0 +1,26 @@
+{
+  "name": "codex-zh-local",
+  "version": "1.2.1-local.1",
+  "private": true,
+  "description": "Local Codex CLI Chinese UI allowlist wrapper; independent launchers, no configuration changes.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "codex-zh-local": "bin/codex-zh.js",
+    "codex-zh-local-doctor": "bin/codex-zh-doctor.js"
+  },
+  "main": "lib/translator.js",
+  "scripts": {
+    "test": "node --test",
+    "lint": "node scripts/validate-data.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {},
+  "upstream": {
+    "repository": "https://github.com/taekchef/codex-code-zh-cn",
+    "commit": "d5c554a860ed22483a49c820283439c9eb23746e",
+    "version": "1.2.0"
+  }
+}

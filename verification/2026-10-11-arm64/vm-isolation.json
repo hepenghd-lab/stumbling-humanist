@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "mounts": [],
+  "port_forwards": [],
+  "ssh_agent_forwarded": false,
+  "vm_type": "vz"
+}

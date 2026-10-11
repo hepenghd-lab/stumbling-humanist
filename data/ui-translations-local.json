@@ -1,0 +1,247 @@
+[
+  {
+    "id": "A1",
+    "en": "Exploring",
+    "zh": "正在探查"
+  },
+  {
+    "id": "A1",
+    "en": "Explored",
+    "zh": "已探查"
+  },
+  {
+    "id": "A2",
+    "en": "Run",
+    "zh": "运行"
+  },
+  {
+    "id": "A2",
+    "en": "Running",
+    "zh": "运行中"
+  },
+  {
+    "id": "A2",
+    "en": "Ran",
+    "zh": "运行"
+  },
+  {
+    "id": "A2",
+    "en": "You ran",
+    "zh": "你运行了"
+  },
+  {
+    "id": "A3",
+    "en": "Read",
+    "zh": "读取"
+  },
+  {
+    "id": "A3",
+    "en": "List",
+    "zh": "列出"
+  },
+  {
+    "id": "A3",
+    "en": "Search",
+    "zh": "搜索"
+  },
+  {
+    "id": "A4",
+    "en": "Calling",
+    "zh": "调用中"
+  },
+  {
+    "id": "A4",
+    "en": "Called",
+    "zh": "已调用"
+  },
+  {
+    "id": "A5",
+    "en": "Searching for",
+    "zh": "正在搜索"
+  },
+  {
+    "id": "A5",
+    "en": "Searched for",
+    "zh": "已搜索"
+  },
+  {
+    "id": "A6",
+    "en": "Searching page",
+    "zh": "正在搜索页面"
+  },
+  {
+    "id": "A6",
+    "en": "Searched page",
+    "zh": "已搜索页面"
+  },
+  {
+    "id": "A7",
+    "en": "Working",
+    "zh": "工作中"
+  },
+  {
+    "id": "B1",
+    "en": "failed",
+    "zh": "失败"
+  },
+  {
+    "id": "B1",
+    "en": "Failed",
+    "zh": "失败"
+  },
+  {
+    "id": "B3",
+    "en": "(no output)",
+    "zh": "（无输出）"
+  },
+  {
+    "id": "B4",
+    "en": "Failed to apply patch",
+    "zh": "应用补丁失败"
+  },
+  {
+    "id": "B6",
+    "en": "Background output",
+    "zh": "后台输出"
+  },
+  {
+    "id": "C1",
+    "en": "connected",
+    "zh": "已连接"
+  },
+  {
+    "id": "C1",
+    "en": "starting",
+    "zh": "启动中"
+  },
+  {
+    "id": "C2",
+    "en": "authentication required",
+    "zh": "需要身份验证"
+  },
+  {
+    "id": "C2",
+    "en": "not started",
+    "zh": "未启动"
+  },
+  {
+    "id": "C3",
+    "en": "disabled",
+    "zh": "已禁用"
+  },
+  {
+    "id": "C3",
+    "en": "cancelled",
+    "zh": "已取消"
+  },
+  {
+    "id": "C3",
+    "en": "unknown",
+    "zh": "未知"
+  },
+  {
+    "id": "C4",
+    "en": "Loading MCP inventory",
+    "zh": "正在加载 MCP 清单"
+  },
+  {
+    "id": "D1",
+    "en": "Would you like to run the following command?",
+    "zh": "是否运行以下命令？"
+  },
+  {
+    "id": "D2",
+    "en": "Yes, just this once",
+    "zh": "是，仅这一次"
+  },
+  {
+    "id": "D2",
+    "en": "Yes, proceed",
+    "zh": "是，继续"
+  },
+  {
+    "id": "D3",
+    "en": "No, and tell Codex what to do differently",
+    "zh": "否，并告诉 Codex 应如何调整"
+  },
+  {
+    "id": "D4",
+    "en": "to confirm",
+    "zh": "确认"
+  },
+  {
+    "id": "D4",
+    "en": "to cancel",
+    "zh": "取消"
+  },
+  {
+    "id": "D4",
+    "en": "to interrupt",
+    "zh": "中断"
+  },
+  {
+    "id": "D4",
+    "en": "to interrupt)",
+    "zh": "中断)"
+  },
+  {
+    "id": "E2",
+    "en": "for shortcuts",
+    "zh": "查看快捷键"
+  },
+  {
+    "id": "E2",
+    "en": "to queue message",
+    "zh": "将消息排队"
+  },
+  {
+    "id": "E3",
+    "en": "again to quit",
+    "zh": "再按一次退出"
+  },
+  {
+    "id": "E3",
+    "en": "to edit previous message",
+    "zh": "编辑上一条消息"
+  },
+  {
+    "id": "B1",
+    "en": "${count} failed",
+    "zh": "${count} 项失败"
+  },
+  {
+    "id": "B2",
+    "en": "Failed (exit ${code})",
+    "zh": "失败（退出码${code}）"
+  },
+  {
+    "id": "B5",
+    "en": "Error: ${detail}",
+    "zh": "错误：${detail}"
+  },
+  {
+    "id": "E1",
+    "en": "${percent}% context left",
+    "zh": "剩余上下文 ${percent}%"
+  },
+  {
+    "id": "E2",
+    "en": "to queue",
+    "zh": "排队"
+  },
+  {
+    "id": "E3",
+    "en": "again to edit previous message",
+    "zh": "再按一次编辑上一条消息"
+  },
+  {
+    "id": "D4",
+    "en": "to confirm or",
+    "zh": "确认，或按"
+  },
+  {
+    "id": "D4",
+    "en": "Press",
+    "zh": "按"
+  }
+]

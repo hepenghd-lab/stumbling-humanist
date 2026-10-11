@@ -1,0 +1,26 @@
+# Defence in depth. The supported runner sends an exact file allowlist as a tar.
+**
+!Dockerfile
+!package.json
+!package-lock.json
+!install.sh
+!uninstall.sh
+!LICENSE
+!bin/
+!bin/*.js
+!lib/
+!lib/*.js
+!data/
+!data/ui-translations-local.json
+!scripts/
+!scripts/container-entry.sh
+!scripts/container_guard.py
+!scripts/container_install_check.py
+!scripts/container_test.py
+!scripts/test_container_test.py
+!scripts/manage-links.js
+!scripts/pty_bridge.py
+!scripts/smoke_frontend.py
+!scripts/validate-data.js
+!tests/
+!tests/*.test.js

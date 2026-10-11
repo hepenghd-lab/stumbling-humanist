@@ -1,0 +1,39 @@
+name: Reproduce isolated verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  linux-container:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Check historical evidence against source
+        run: python3 scripts/verify_public_evidence.py
+      - name: Check temporary-runtime lifecycle with fixtures
+        run: python3 -m unittest discover -s scripts -p test_temporary_container_test.py
+      - name: Run actual restricted Docker container
+        run: python3 scripts/container_test.py
+      - name: Summarize new run
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo '### New runner verification'
+            echo 'Historical ARM64 evidence is checked separately; this runner creates a new result.'
+            if [ -f test-results/container/result.json ]; then
+              echo '~~~json'
+              cat test-results/container/result.json
+              echo '~~~'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

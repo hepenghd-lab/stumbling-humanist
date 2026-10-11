@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="410" viewBox="0 0 900 410" role="img" aria-labelledby="title description">
+<title id="title">codex-zh-local 模拟交互验证展示</title>
+<desc id="description">这是根据已通过的模拟 CLI 交互检查绘制的示意，不是真实模型任务截图。显示中文提示并保留代码、JSON、按键和退出码。</desc>
+<rect width="900" height="410" rx="16" fill="#111827"/>
+<rect width="900" height="52" rx="16" fill="#1f2937"/>
+<rect y="36" width="900" height="16" fill="#1f2937"/>
+<circle cx="24" cy="26" r="6" fill="#f87171"/><circle cx="44" cy="26" r="6" fill="#fbbf24"/><circle cx="64" cy="26" r="6" fill="#34d399"/>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, monospace, sans-serif" font-size="20" fill="#e5e7eb">
+<text x="90" y="33" font-size="15">codex-zh-local · 模拟 CLI 验证示意</text>
+<text x="32" y="92" fill="#93c5fd">已探查</text>
+<text x="32" y="130" fill="#93c5fd">运行python test.py</text>
+<text x="32" y="168" fill="#fca5a5">失败（退出码7）</text>
+<text x="32" y="206">{"status":"Working"}</text>
+<text x="32" y="244">print("Working")</text>
+<text x="32" y="282" fill="#86efac">› 1. 是，继续 (y)</text>
+<text x="32" y="320" fill="#93c5fd">剩余上下文 37%</text>
+<text x="32" y="358">ECHO 你好</text>
+<text x="530" y="206" font-size="15" fill="#9ca3af">JSON 原文保留</text>
+<text x="530" y="244" font-size="15" fill="#9ca3af">代码原文保留</text>
+<text x="530" y="282" font-size="15" fill="#9ca3af">编号与按键保留</text>
+<text x="530" y="358" font-size="15" fill="#9ca3af">模拟程序退出码 17：符合预期</text>
+</g>
+<text x="32" y="394" font-family="sans-serif" font-size="12" fill="#9ca3af">真实容器中的模拟前端检查已通过；未调用模型或使用真实账户。</text>
+</svg>

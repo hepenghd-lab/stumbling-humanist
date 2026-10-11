@@ -1,0 +1,85 @@
+Container isolation verified: {"passed": true, "uid": 1000, "network": "loopback only", "root_filesystem": "read-only", "temporary_storage": "tmpfs", "effective_capabilities": 0, "no_new_privileges": true}
+v24.21.0
+Python 3.11.2
+✔ splits text around SGR (0.721375ms)
+✔ CSI sequences pass through verbatim (0.070292ms)
+✔ OSC sequences pass through verbatim (0.05375ms)
+✔ flushText keeps requested tail (0.071625ms)
+✔ charset and single-char escapes (0.063167ms)
+✔ non-interactive CLI preserves stdout JSON, stderr, args and exit status (25.190916ms)
+✔ retired config APIs cannot modify an existing user configuration (1.280042ms)
+✔ retired APIs cannot create a configuration file (0.063709ms)
+✔ isShadowShim detects the shadow marker (0.411333ms)
+✔ isShadowShim returns false for missing files (0.453917ms)
+✔ detects /chinese (0.733333ms)
+✔ detects /english (0.1405ms)
+✔ ignores ordinary input and inline args (0.053709ms)
+✔ /language and /lang report null language (help command) (0.144583ms)
+✔ backspace edits the line (0.103958ms)
+✔ ctrl-c resets the line buffer (0.043625ms)
+✔ install/uninstall manages only independent owned links and preserves config (14.525709ms)
+✔ an unrelated existing launcher is never overwritten, even partially (0.47725ms)
+✔ uninstall preserves a user-replaced launcher (0.43775ms)
+✔ longest literal match wins (0.752708ms)
+✔ word entry does not match inside longer word (0.621166ms)
+✔ fragment translation preserves display width (0.09425ms)
+✔ pad:false does not pad (0.07775ms)
+✔ dynamic patterns with placeholders (0.322041ms)
+✔ longer pattern beats shorter literal prefix (0.192667ms)
+✔ patterns match mid-run and trailing placeholders are greedy (0.28025ms)
+✔ punctuation-only continuation is handled (0.0615ms)
+✔ POSIX transport creates a real TTY and preserves ANSI/Unicode/exit code (81.733792ms)
+✔ terminal resize reaches the child process (22.150875ms)
+✔ signals terminate the child and preserve the signal number (74.994125ms)
+✔ large terminal output is drained without truncation (31.3695ms)
+✔ UTF-8 input and output retain split multibyte characters (26.713625ms)
+✔ redirected input or output bypasses translation (0.33175ms)
+✔ exec, protocol services, help, version and login bypass even inside a TTY (0.110375ms)
+✔ ordinary chat, resume/fork and literal prompts remain interactive (0.056458ms)
+✔ setLanguage persists zh/en and defaults to zh-CN (0.904709ms)
+✔ approved status meanings are translated without changing display columns (1.521208ms)
+✔ short Run/Ran labels borrow only existing padding across styling (0.782542ms)
+✔ insufficient padding and cursor movement retain original text and controls (0.571666ms)
+✔ all approved A–E elements are represented, including omitted variants (0.092625ms)
+✔ dynamic counts, exit codes, percent and error details remain exact (0.530334ms)
+✔ obvious code, JSON, commands and paths are never translated (0.778416ms)
+✔ code protection survives ANSI style boundaries (0.108375ms)
+✔ fenced code stays untouched and following UI labels can translate (0.086667ms)
+✔ a phrase spanning chunks can translate, but arbitrary substring matches cannot (0.127708ms)
+✔ plain prompts and short labels flush on the first bounded timer (0.15775ms)
+✔ a real timer releases a newline-free prompt before stream end (80.161583ms)
+✔ continuous large output is bounded and unchanged (6.149459ms)
+✔ disabled translation and end are byte preserving and idempotent (0.223292ms)
+✔ ordinary standalone allowlisted words remain an explicit residual ambiguity (0.072583ms)
+✔ numbered approval rows retain their option number and keyboard key (0.502375ms)
+✔ ellipsis and compact footer variants remain translatable (0.246708ms)
+✔ switching to English does not translate an already buffered short label (0.10025ms)
+✔ ASCII width (0.844ms)
+✔ CJK width (0.390334ms)
+✔ mixed width (0.0825ms)
+✔ combining marks are zero-width (0.055833ms)
+✔ padToWidth pads shorter text (0.078209ms)
+ℹ tests 58
+ℹ suites 0
+ℹ pass 58
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 374.359792
+Validated 49 entries, 24 approved groups; 3 short labels use adjacent padding or retain English.
+Python syntax checks passed.
+Full frontend PTY smoke passed: Chinese labels/input, protected code/JSON, option keys, exit 17.
+Python 3.11.2
+Validated 49 entries, 24 approved groups; 3 short labels use adjacent padding or retain English.
+["/tmp/fixture-install/bin/codex-zh-local","/tmp/fixture-install/bin/codex-zh-local-doctor"]
+已安装独立 codex-zh-local 入口。官方 codex 和 Codex 配置未被修改。
+{"removed":["/tmp/fixture-install/bin/codex-zh-local","/tmp/fixture-install/bin/codex-zh-local-doctor"],"retained":[]}
+卸载完成，源码和设置保留；官方 codex 与 ~/.codex 未被修改。
+Shell install/uninstall passed; synthetic CLI/config/auth/profile hashes unchanged.
+CONTAINER_TEST_PASSED: isolation, unit tests, full PTY and install/uninstall.
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.008s
+
+OK

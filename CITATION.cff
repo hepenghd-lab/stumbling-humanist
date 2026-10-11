@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "如引用本项目，请同时说明它是未同行评审的工程技术报告，并保留上游项目署名。"
+title: "codex-zh-local: Allowlisted Chinese UI Translation for Codex CLI"
+type: software
+repository-code: "https://github.com/hepenghd-lab/stumbling-humanist"
+url: "https://github.com/hepenghd-lab/stumbling-humanist"
+authors:
+  - name: "hepenghd-lab"
+version: "1.2.1-local.1"
+date-released: "2026-10-11"
+license: MIT
+abstract: "基于固定提示白名单的中文终端包装器，附真实隔离容器验证材料及工程技术报告。"
+keywords:
+  - codex
+  - localization
+  - chinese
+  - pty
+  - reproducibility
+preferred-citation:
+  type: report
+  url: "https://github.com/hepenghd-lab/stumbling-humanist/blob/main/paper/PAPER.zh-CN.md"
+  title: "面向 Codex CLI 的白名单中文提示包装器：终端兼容设计与隔离验证"
+  authors:
+    - name: "hepenghd-lab"
+  year: 2026
+  date-published: "2026-10-11"
+  notes: "工程技术报告；Codex 辅助实现和撰写；未经同行评审。见 paper/PAPER.zh-CN.md。"

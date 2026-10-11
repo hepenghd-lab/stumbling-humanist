@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+*.pyc
+.local-launchers/
+.local-install-state.json*
+test-results/
+.DS_Store
+.env
+.env.*
+.publication-state.json*

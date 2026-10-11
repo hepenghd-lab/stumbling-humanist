@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "status": "passed",
+  "image_id": "sha256:500df018a0e5a85eb45225f91a043c718b5e3525f417593c7d88ba912be394a0",
+  "container_id": "b02125483f8bd6e14758cf264c8c40d18e9a6925da440341441f016e8c99536b",
+  "exit_code": 0,
+  "oom_killed": false
+}
