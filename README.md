@@ -7,7 +7,7 @@ A humanities student's stumbling, groping way. No map, only footsteps; no guide,
 
 **codex-zh-local** 将已确认的固定英文提示翻译为中文，帮助中文用户理解动作状态、错误、审批和快捷键。它通过独立入口启动官方 Codex CLI，基于 [taekchef/codex-code-zh-cn](https://github.com/taekchef/codex-code-zh-cn) 修订，保留 MIT 许可。
 
-[论文式技术报告](paper/PAPER.zh-CN.md) · [论文 PDF](paper/PAPER.zh-CN.pdf) · [实际验证材料](verification/2026-10-11-arm64/README.md) · [全部译文](TRANSLATIONS.md) · [复现说明](CONTAINER_TEST.md)
+[报告问题与修复](ANALYSIS_RESPONSE.md) · [论文式技术报告](paper/PAPER.zh-CN.md) · [论文 PDF](paper/PAPER.zh-CN.pdf) · [实际验证材料](verification/2026-10-11-arm64/README.md) · [全部译文](TRANSLATIONS.md) · [复现说明](CONTAINER_TEST.md)
 
 ![模拟前端验证示意](docs/terminal-demo.svg)
 
@@ -17,12 +17,14 @@ A humanities student's stumbling, groping way. No map, only footsteps; no guide,
 
 | 项目 | 当前状态 |
 |---|---|
-| 版本 | 1.2.1-local.1 |
-| 翻译范围 | 49 条记录、24 组确认提示；不是全部界面汉化 |
+| 版本 | 1.2.1-local.2 |
+| 翻译范围 | 65 条记录、31 组确认提示；不是全部界面汉化 |
 | 支持平台 | macOS / Linux；Node.js 18+、Python 3；测试脚本要求 Python 3.9+ |
 | 运行依赖 | Node/Python 标准库；无 npm 依赖 |
 | 文案开发基线 | 官方 Codex CLI 0.162.1 |
-| 实际 Linux ARM64 容器验证 | 58 项 Node、6 项 Python、词表、完整模拟交互和安装卸载通过 |
+| 当前本机验证 | 69 项 Node、11 项 Python通过；8 份真实录制回放均出现中文 |
+| 实际官方 CLI 启动 | 新包装器驱动官方 0.162.1，出现 82 个中文字符；临时配置、未提交模型任务 |
+| 历史 Linux ARM64 容器验证 | 旧版 local.1 的 58/6 通过记录保留；当前修订容器結果另记 |
 | 临时环境与宿主检查 | 临时 VM/Docker/镜像已清理；所列配置、认证哈希及官方入口未变 |
 | 报告性质 | 工程技术报告；未经同行评审；未验证真实模型任务 |
 
@@ -88,10 +90,17 @@ bash uninstall.sh
 
 ## 验证与复现
 
-2026-10-11 的真实隔离测试材料已随代码公开：
+当前修订针对真实 TUI 的无换行、SGR 拆分及光标定位，详见 [问题核实与修复](ANALYSIS_RESPONSE.md)。旧版容器材料仅证明旧版已测内容，不证明真实 TUI 可用或此次修订通过容器测试。当前修订材料位于 [verification/1.2.1-local.2](verification/1.2.1-local.2/README.md)。
 
 ```sh
-# 核对公开材料、被测源码及记录的一致性
+# 离线重放全部脱敏真实录制
+node scripts/replay_recordings.js verification/1.2.1-local.2/recordings
+```
+
+验证与容器复现：
+
+```sh
+# 核对旧版历史归档，输出其与当前源码的差异
 python3 scripts/verify_public_evidence.py
 
 # 已有可信 Docker 时，重新运行受限容器
@@ -101,9 +110,9 @@ python3 scripts/container_test.py
 bash run-container-test.command
 ```
 
-实际验证使用禁网、无宿主机挂载、非 root、只读根文件系统的容器。公开材料包含当次源码归档、哈希、实际日志、隔离和清理结论；私密备份及真实账户材料没有上传。[验证记录](VALIDATION.md) 区分实际结果与未测试范围。
+历史及复现容器使用禁网、无宿主机挂载、非 root、只读根文件系统。公开材料包含当次源码归档、哈希、实际日志、隔离和清理结论；私密备份及真实账户材料没有上传。[验证记录](VALIDATION.md) 区分实际结果与未测试范围。
 
-GitHub Actions 工作流另提供后续复现入口；历史 ARM64 记录不等于新 runner 的 CI 结果。首次仓库发布前不能声称 Actions 已通过。
+GitHub Actions 提供当前修订的受限容器复现；运行状态记录独立保存。此前 CI 的 macOS 路径假设已修正，未确认的新运行不会标为通过。
 
 本机基础检查：
 
@@ -118,7 +127,7 @@ bash -n install.sh uninstall.sh scripts/container-entry.sh
 
 译文参考牛津官方公开在线英文释义与 CLI 场景，自行拟定。没有取得《牛津高阶英汉双解词典》第10版完整英汉条目，不能声称与该版中文原文逐条一致。见 [译法记录](TRANSLATION_NOTES.md)。
 
-终端流无法可靠标明 UI、正文和工具输出的来源。正文独立输出白名单提示时仍可能误译；代码保护是启发式。空间不足、字体宽度差异或新版界面更新可能导致保留英文或需要调整。当前没有验证真实模型任务、完整工具审批、全部 Codex 版本或 Windows。
+终端流无法可靠标明 UI、正文和工具输出的来源。正文独立输出白名单提示时仍可能误译；代码保护是启发式。空间不足、字体宽度差异或新版界面更新可能导致保留英文或需要调整。当前验证包含真实官方启动及真实任务录制回放；没有重新执行真实模型任务、完整工具审批，也没有验证全部 Codex 版本或 Windows。
 
 ## 目录与引用
 

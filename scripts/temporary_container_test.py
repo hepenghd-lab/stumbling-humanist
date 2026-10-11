@@ -23,6 +23,7 @@ IMAGE_URL = 'https://cloud-images.ubuntu.com/releases/noble/release-20260926/ubu
 IMAGE_SHA256 = '1d6bffe64b848468ac97f821d369a4846d983de1800ccf6b5ec8853e85cefc55'
 INSTANCE = 'cztest'
 MARKER = '.codex-zh-owned-runtime'
+RUNTIME_PARENT = Path('/private/tmp')
 VM_INSTALL_SCRIPT = '''set -euo pipefail
 export DEBIAN_FRONTEND=noninteractive
 # Skip optional translations/AppStream metadata; keep package signature checks.
@@ -113,7 +114,7 @@ def vm_configuration(image):
 def remove_owned_runtime(runtime):
     runtime = Path(runtime)
     if (runtime.is_symlink() or not runtime.name.startswith('czrt-')
-            or runtime.parent.resolve() != Path('/private/tmp').resolve()
+            or runtime.parent.resolve() != RUNTIME_PARENT.resolve()
             or not (runtime / MARKER).is_file()
             or (runtime / MARKER).read_text() != 'codex-zh-local temporary test\n'):
         raise RuntimeError('拒绝删除不属于本次测试的运行目录。')
@@ -123,7 +124,7 @@ def remove_owned_runtime(runtime):
 def main():
     if platform.system() != 'Darwin' or platform.machine() != 'arm64' or os.geteuid() == 0:
         raise RuntimeError('本脚本需要 Apple Silicon macOS 普通用户；不使用宿主机 sudo。')
-    if shutil.disk_usage('/private/tmp').free < 8 * 1024 ** 3:
+    if shutil.disk_usage(RUNTIME_PARENT).free < 8 * 1024 ** 3:
         raise RuntimeError('临时虚拟机需要至少 8 GiB 可用空间。')
     snapshot_result = call([sys.executable, ROOT / 'scripts/host_safety.py', 'snapshot'],
                            capture_output=True, text=True)
@@ -131,7 +132,7 @@ def main():
     print('已私密备份配置：' + str(snapshot), flush=True)
     reports = ROOT / 'test-results' / 'container'
     reports.mkdir(parents=True, exist_ok=True)
-    runtime = Path(tempfile.mkdtemp(prefix='czrt-', dir='/private/tmp'))
+    runtime = Path(tempfile.mkdtemp(prefix='czrt-', dir=RUNTIME_PARENT))
     (runtime / MARKER).write_text('codex-zh-local temporary test\n')
     (reports / 'temporary-runtime-result.json').write_text(json.dumps(
         {'passed': None, 'status': 'running', 'backup': str(snapshot),

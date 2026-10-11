@@ -16,7 +16,7 @@ def require(condition, message):
         raise ValueError(message)
 
 
-def verify(evidence, root):
+def verify(evidence, root, require_current=False):
     sums = evidence / 'SHA256SUMS'
     expected_files = set()
     for line in sums.read_text().splitlines():
@@ -63,6 +63,7 @@ def verify(evidence, root):
     require(hashlib.sha256(context.read_bytes()).hexdigest() == manifest['context_sha256'],
             'Context archive hash mismatch')
     expected = {r['path']: r for r in records}
+    changed_source = []
     with tarfile.open(context, 'r:') as archive:
         members = archive.getmembers()
         require(len(members) == 42 and {m.name for m in members} == set(expected), 'Context members differ')
@@ -79,8 +80,10 @@ def verify(evidence, root):
             for component in rel.parts:
                 cursor = cursor / component
                 require(not cursor.is_symlink(), 'Current source symlink: ' + member.name)
-            require(hashlib.sha256(live.read_bytes()).hexdigest() == record['sha256'],
-                    'Current tested source changed: ' + member.name)
+            if not live.is_file() or hashlib.sha256(live.read_bytes()).hexdigest() != record['sha256']:
+                changed_source.append(member.name)
+    if require_current:
+        require(not changed_source, 'Current source differs from historical run: ' + ', '.join(changed_source))
     # Credentials/config snapshots are never part of this flat evidence bundle.
     for name in expected_files:
         if name.endswith(('.json', '.log', '.md')):
@@ -90,15 +93,19 @@ def verify(evidence, root):
             require('BEGIN PRIVATE KEY' not in text, 'Private key marker in evidence')
     return {'passed': True, 'tested_source_files': 42, 'node_tests': 58,
             'python_container_tests': 6, 'entries': 49, 'groups': 24,
+            'matches_current_source': not changed_source, 'changed_source_files': changed_source,
+            'tested_version': '1.2.1-local.1',
             'scope': 'internal consistency and recorded results; not an independent rerun'}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--evidence', type=Path, default=DEFAULT)
+    parser.add_argument('--require-current-source', action='store_true',
+                        help='Fail if current source differs from the historical tested snapshot')
     args = parser.parse_args()
     try:
-        print(json.dumps(verify(args.evidence.resolve(), ROOT), ensure_ascii=False, indent=2))
+        print(json.dumps(verify(args.evidence.resolve(), ROOT, args.require_current_source), ensure_ascii=False, indent=2))
     except (ValueError, OSError, KeyError, tarfile.TarError) as error:
         raise SystemExit('Evidence verification failed: ' + str(error))
 

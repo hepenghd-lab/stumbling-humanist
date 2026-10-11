@@ -17,7 +17,7 @@ import tempfile
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
-IMAGE = 'codex-zh-local-test:1.2.1-local.1'
+IMAGE = 'codex-zh-local-test:1.2.1-local.2'
 LABEL = 'codex-zh-local.purpose=isolated-test'
 # Exact names, not directory globs: unrelated files can never enter the context.
 FILES = (
@@ -39,6 +39,9 @@ FILES = (
     'tests/matcher.test.js', 'tests/pty-bridge.test.js',
     'tests/run-mode.test.js', 'tests/settings.test.js',
     'tests/translator.test.js', 'tests/width.test.js',
+    'tests/tui-replay.test.js', 'tests/helpers-screen.js',
+    'tests/fixtures/codex-0.162.1-startup.ansi',
+    'tests/fixtures/codex-0.162.1-task.ansi', 'tests/fixtures/PROVENANCE.json',
 )
 
 

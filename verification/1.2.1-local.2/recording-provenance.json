@@ -1,0 +1,95 @@
+{
+  "archive_sha256": "cf7d6feadbabcbd439ace710b3d9271980c95e251c3cd51f6d0ec63abf5ac50f",
+  "verified_manifest_files": 36,
+  "pinned_source_matches_published_baseline": true,
+  "records": [
+    {
+      "file": "control.ansi",
+      "original_bytes": 8255,
+      "original_sha256": "923eaf0166d88c627d758b6d75bce2dd966d966eaf4b48bc1d9961bc297af4dc",
+      "public_sha256": "ccfd14a77a2e2fcc2ccecf2a8ec8de79724ae1a69c8ed1e27fb2ce0d1e78fdf7",
+      "redactions": [
+        "session UUID",
+        "temporary workspace name",
+        "quota percentage (zero digits)"
+      ]
+    },
+    {
+      "file": "plain_fixed.ansi",
+      "original_bytes": 19421,
+      "original_sha256": "23355b24f29b86e1f5c9969eea9f1293763222fc8afc1235f33689bbca9cc5b7",
+      "public_sha256": "2c72a840c63c4a416cc2db02691d9ec35ecd2a4497ccf2ef97a5f0753efeeb5d",
+      "redactions": [
+        "session UUID",
+        "temporary workspace name",
+        "quota percentage (zero digits)"
+      ]
+    },
+    {
+      "file": "real_raw.ansi",
+      "original_bytes": 5245,
+      "original_sha256": "287393badc23c4dee14ad2a81cf3ab6928decc07da88e53d3dc5e6755db324cd",
+      "public_sha256": "192a762c7bdb4e1d353619f8427ab010302f689a35722156e50dbd437e857c95",
+      "redactions": [
+        "session UUID",
+        "temporary workspace name",
+        "quota percentage (zero digits)"
+      ]
+    },
+    {
+      "file": "status.ansi",
+      "original_bytes": 5790,
+      "original_sha256": "7adfd34124cdcd5c1c4a03e589b083672a0d10d76552d82ee3b5fcaf8666a3b2",
+      "public_sha256": "2b09f6e0d27f260e8552756afd4a334b52bab71940c472d718c1b3a9d0b9e8eb",
+      "redactions": [
+        "session UUID",
+        "temporary workspace name",
+        "quota percentage (zero digits)"
+      ]
+    },
+    {
+      "file": "task.ansi",
+      "original_bytes": 8452,
+      "original_sha256": "8b3771f1f37b6921ee2f589750ef68ad326c6d026a82bc5710d1c33f9cfe8835",
+      "public_sha256": "1df981886ea15964388f61f35c0de381c5ebe6b3e552006719ae51fc789d3c1e",
+      "redactions": [
+        "session UUID",
+        "temporary workspace name",
+        "quota percentage (zero digits)"
+      ]
+    },
+    {
+      "file": "task2.ansi",
+      "original_bytes": 8171,
+      "original_sha256": "3cdb48f02369c0df35b345fd4148a4d28a0875f35de96f7e311ee334072d9efe",
+      "public_sha256": "789bff7e2846104f8ac3bad162b04cba316a7af6e0ceee9ec1da805db96ed27f",
+      "redactions": [
+        "session UUID",
+        "temporary workspace name",
+        "quota percentage (zero digits)"
+      ]
+    },
+    {
+      "file": "task3.ansi",
+      "original_bytes": 8303,
+      "original_sha256": "07ce1aac7b7bfe56ee361005a0f82af9c13ca534867036e2ce7c1579b1cb422d",
+      "public_sha256": "e151947bf05cb036efdc2124aef5784a18641b59a674fa37e383ac0d19dc15d3",
+      "redactions": [
+        "session UUID",
+        "temporary workspace name",
+        "quota percentage (zero digits)"
+      ]
+    },
+    {
+      "file": "wrapper_fixed.ansi",
+      "original_bytes": 18609,
+      "original_sha256": "db95552aa5ee0036867ca1de1912bf9a32c2aef194db4aee9273f5c124d19c2a",
+      "public_sha256": "cda7001c0114de0b9750dee02eef4d23fa9903abf146226914aa30548cd53af6",
+      "redactions": [
+        "session UUID",
+        "temporary workspace name",
+        "quota percentage (zero digits)"
+      ]
+    }
+  ]
+}

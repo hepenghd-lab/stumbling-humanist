@@ -1,5 +1,9 @@
 # 验证记录
 
+当前修订为 **1.2.1-local.2**：本机 69 项 Node、11 项 Python 与词表（65 条、31 组）检查通过；8 份真实录制回放命中 11～20 次且控制序列未变；新版包装器实际启动官方 CLI，产生 82 个中文字符。新容器/CI 结果独立记录，见 [修复说明](ANALYSIS_RESPONSE.md) 及 [当前验证材料](verification/1.2.1-local.2/README.md)。
+
+以下为 **local.1 的历史容器与本机检查**；保留记录不等于证明旧版实际 TUI 可用，也不作为此次修订的容器结果。
+
 版本：1.2.1-local.1。最终实际容器运行：2026-10-11 约 20:05（Asia/Shanghai）。上游基线为 taekchef/codex-code-zh-cn v1.2.0，提交 d5c554a860ed22483a49c820283439c9eb23746e；文案开发对照官方 Codex CLI 0.162.1。
 
 ## 实际通过结果
@@ -19,7 +23,7 @@
 | 所列宿主路径复查 | 无变化、未恢复覆盖文件 | host-comparison.json |
 | 被测源码 | 42 文件；公开源文件与当次归档哈希一致 | context-manifest.json、source-context.tar |
 
-材料位于 [verification/2026-10-11-arm64](verification/2026-10-11-arm64/README.md)。执行 python3 scripts/verify_public_evidence.py 可核对公开材料及被测源码身份。它检查内部一致性和已有记录，并不替代独立重跑。
+材料位于 [verification/2026-10-11-arm64](verification/2026-10-11-arm64/README.md)。执行 python3 scripts/verify_public_evidence.py 可核对历史公开材料及归档源码身份，并输出当前源码差异；加 --require-current-source 可严格要求一致。它检查内部一致性和已有记录，并不替代独立重跑。
 
 ## 本机另行执行的检查
 

@@ -24,3 +24,8 @@
 !scripts/validate-data.js
 !tests/
 !tests/*.test.js
+!tests/helpers-screen.js
+!tests/fixtures/
+!tests/fixtures/codex-0.162.1-startup.ansi
+!tests/fixtures/codex-0.162.1-task.ansi
+!tests/fixtures/PROVENANCE.json

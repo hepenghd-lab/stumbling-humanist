@@ -1,0 +1,10 @@
+{
+  "official_cli": "0.162.1",
+  "source_kind": "user-provided analyst recording; probe-instrumented wrapper output",
+  "source_sha256": "db95552aa5ee0036867ca1de1912bf9a32c2aef194db4aee9273f5c124d19c2a",
+  "source_bytes": 18609,
+  "published_fixture": "codex-0.162.1-task.ansi",
+  "selection": "Only original consecutive UI row fragments containing version, progress, action or footer; no invented controls. OSC titles and unrelated rows omitted.",
+  "excluded": "Account usage, prompt/model response, session UUID, paths and unrelated rows are not published.",
+  "fixture_sha256": "18bed1a06359eaa6533a20ddc6c47a7990f46c47a1686df2a98d11c398df69b5"
+}

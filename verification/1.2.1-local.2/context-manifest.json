@@ -1,0 +1,246 @@
+{
+  "context_sha256": "0f5d1421aba9c91836246fd6c57640bcea19c107cc43dffa24c8e8059f545c46",
+  "files": [
+    {
+      "path": "Dockerfile",
+      "size": 615,
+      "sha256": "643f6d5cc1658b2e59e917bf07b30033c6305b3827316494e581dc8b0dc85507"
+    },
+    {
+      "path": ".dockerignore",
+      "size": 680,
+      "sha256": "c670a0cef9832c72defb02903ed1b1c257d130f7bbfa7b5f91bf76e66c52b460"
+    },
+    {
+      "path": "LICENSE",
+      "size": 1066,
+      "sha256": "d763bbab387ab5920e560293c9b01dca0285687c3744d37ebf3f1dc5bb733b76"
+    },
+    {
+      "path": "package.json",
+      "size": 699,
+      "sha256": "5718a444b92c3572c8d6c4344a860ee57bf4af9eaf486130f327a9046ef62e14"
+    },
+    {
+      "path": "package-lock.json",
+      "size": 409,
+      "sha256": "fc357232f08402752a8529c014f5db92b6b7447128db7077a4f966350cf85f17"
+    },
+    {
+      "path": "install.sh",
+      "size": 957,
+      "sha256": "9748f49591e0628f91d4de70548ae3dc8ce9cd115c566aaf6e1133c08919a68e"
+    },
+    {
+      "path": "uninstall.sh",
+      "size": 831,
+      "sha256": "58a7fca35dc3569cda026f6f6c4ba3e2f3fbdd99a295e1f5b74bf530dccb7f9c"
+    },
+    {
+      "path": "bin/codex-zh.js",
+      "size": 10712,
+      "sha256": "d24526d94877e2bef98e092a18624292b6cd0c6965836f2936f8f58dcc7d9ce3"
+    },
+    {
+      "path": "bin/codex-zh-doctor.js",
+      "size": 1360,
+      "sha256": "606d78e54809e15e9ea074227739fc21fbf3874cf648b796e50d13231d8336c3"
+    },
+    {
+      "path": "data/ui-translations-local.json",
+      "size": 5482,
+      "sha256": "94d8bfc04a3424c58325d5fcaef6b86f969fc4ae88156fab8c435af4efd4dbe6"
+    },
+    {
+      "path": "lib/ansi-tokenizer.js",
+      "size": 4757,
+      "sha256": "736453c12c8bb78f0e2de93a91f675677e14363e1ed1a1dc38e519e62c4a4afd"
+    },
+    {
+      "path": "lib/config-overlay.js",
+      "size": 302,
+      "sha256": "f46c8dbc7ebbc37f01a4938de95f0579370d73091392f5a8c3fd4ee0a0905928"
+    },
+    {
+      "path": "lib/detect.js",
+      "size": 4750,
+      "sha256": "e809d3804327421fa3174050eafe9dd14a47b8eea8c4a95ccc45dc3a1c580f48"
+    },
+    {
+      "path": "lib/language-toggle.js",
+      "size": 1231,
+      "sha256": "7d32b359e8720c8e2e4116e566199dcabfd29e7edb7638003a2b616ce54c3104"
+    },
+    {
+      "path": "lib/matcher.js",
+      "size": 6504,
+      "sha256": "8e9f9d5497b7fbcad2e8e49f07e3e98ef4bc9963a874a17a690dfa47085cec57"
+    },
+    {
+      "path": "lib/pty-bridge.js",
+      "size": 3072,
+      "sha256": "192afe938293c310ce948618a989755d6b0af789e7973bbb58f4bda75817361e"
+    },
+    {
+      "path": "lib/run-mode.js",
+      "size": 1238,
+      "sha256": "058cc1bf25691c5559ecce1077b167c3a338da72c569a47a45ec8a437ebfceda"
+    },
+    {
+      "path": "lib/settings.js",
+      "size": 1233,
+      "sha256": "5e6267f5700322cb5eda06b5600d958d8b6bd377a2c1ac64e95294d443b6b21d"
+    },
+    {
+      "path": "lib/translator.js",
+      "size": 8035,
+      "sha256": "89864245c507fedf98b6652508ffe2eba1ac39f4447c84e534576b835330c63e"
+    },
+    {
+      "path": "lib/ui-matcher.js",
+      "size": 5756,
+      "sha256": "fcc45b8b24023d0f303a3fa5ee4149919f7cb08fbc7d98510e56bccb05d16abc"
+    },
+    {
+      "path": "lib/width.js",
+      "size": 4220,
+      "sha256": "d06f90306e4cea8a10e1349f360bfe639cdfeda31af5904075439299cfede680"
+    },
+    {
+      "path": "scripts/container-entry.sh",
+      "size": 843,
+      "sha256": "7694305418f638f8ce362b59bcf3f930a2080787c11777583c92208daef26bcb"
+    },
+    {
+      "path": "scripts/container_guard.py",
+      "size": 1924,
+      "sha256": "07447e270aa32e0a1758701d2ea49d809486b52e914bbaf03bf0f0d0060456f5"
+    },
+    {
+      "path": "scripts/container_install_check.py",
+      "size": 2306,
+      "sha256": "05886d79b4985f7aaefa2400de02b9ff5508606397c7beda70f1b0c23dfdf9c0"
+    },
+    {
+      "path": "scripts/container_test.py",
+      "size": 13942,
+      "sha256": "f5c928804b2e8e1e8b87ea38453dd8754b907c64855ca1fa67842b9c3b7d8e30"
+    },
+    {
+      "path": "scripts/test_container_test.py",
+      "size": 6962,
+      "sha256": "0072c63dff329bc9a37dc31add0b74e373b4b3bed6fe1f3de68ae9a21136dce3"
+    },
+    {
+      "path": "scripts/manage-links.js",
+      "size": 4239,
+      "sha256": "738c25c5b8cf648b3880eec89206db353416e22af459c112c6f69b81cfb35f2b"
+    },
+    {
+      "path": "scripts/pty_bridge.py",
+      "size": 5995,
+      "sha256": "0f94e581a118ff6c360b5cc607584a4cf692555a59a7ac40378d4891780ac82a"
+    },
+    {
+      "path": "scripts/smoke_frontend.py",
+      "size": 3978,
+      "sha256": "5bf08482040a4526240775d7b42c3cdf79d07eb66fe769728743a1539466ac28"
+    },
+    {
+      "path": "scripts/validate-data.js",
+      "size": 1096,
+      "sha256": "d9987e808fd424afaa1d3140b769bb02d245256773ee3a9a79959e3cb0a7a99a"
+    },
+    {
+      "path": "tests/ansi-tokenizer.test.js",
+      "size": 1478,
+      "sha256": "a8e44fd9c6e19bfe75bf4e8aff0a06db42f9ec49a5db8cebc9af0023447c051f"
+    },
+    {
+      "path": "tests/cli.test.js",
+      "size": 1002,
+      "sha256": "816c7c83ebfbca3a8ec4613301121c71f6ca38d83ac85f68c9143f903caeec1d"
+    },
+    {
+      "path": "tests/config-overlay.test.js",
+      "size": 1058,
+      "sha256": "27457f3ace85401a8f14a671fdd4396b3be8c15bd03126cdad9298907b3a3d3d"
+    },
+    {
+      "path": "tests/detect.test.js",
+      "size": 761,
+      "sha256": "f866657b2893e831f3b073c2838d9eb98dc7fa690b4b29f249d1b9860637b7df"
+    },
+    {
+      "path": "tests/language-toggle.test.js",
+      "size": 1439,
+      "sha256": "59f4f966c7be785a80b93ee335404b1612f70570cca1f5fef4ad07a7d8b0592a"
+    },
+    {
+      "path": "tests/manage-links.test.js",
+      "size": 2616,
+      "sha256": "ccdc5167a585c0babc7d107360e2ce8617bdc3c8115047e0580f88be0932bf68"
+    },
+    {
+      "path": "tests/matcher.test.js",
+      "size": 3355,
+      "sha256": "d07a4185ec4a701661e5faf126cef41310c3c6a6f62d7ac74c4031310f4abfa5"
+    },
+    {
+      "path": "tests/pty-bridge.test.js",
+      "size": 3124,
+      "sha256": "88f506c2ed959fe45e0eca54656e075a099bc40377b7f479602f555764b59066"
+    },
+    {
+      "path": "tests/run-mode.test.js",
+      "size": 861,
+      "sha256": "0998e6df86c0187b28d8db3764922a5c3f7e34a7b8f4d996390660f959e724f4"
+    },
+    {
+      "path": "tests/settings.test.js",
+      "size": 913,
+      "sha256": "40a3e5ec46af9bb3bec429edd7fc06ee99b428a336a81b93a7b0d579dd91c2e5"
+    },
+    {
+      "path": "tests/translator.test.js",
+      "size": 6258,
+      "sha256": "32e8b1b175100e6d564de6ac3e3f5d359ceca912d7c3994b378ecb7a6876b67c"
+    },
+    {
+      "path": "tests/width.test.js",
+      "size": 779,
+      "sha256": "126a06a39ecba56d4d73605153edb9377092453200a192d20a22e1fbad631dbb"
+    },
+    {
+      "path": "tests/tui-replay.test.js",
+      "size": 5522,
+      "sha256": "754f9c65fceb2f9a32db9041199904ac765d9c77ceb199b5ac6d85a3e37ac608"
+    },
+    {
+      "path": "tests/helpers-screen.js",
+      "size": 2277,
+      "sha256": "e4a15bb4922bd9a8b0cb9facd7b24301fdb240f6eb09e50d60fd09d01ceabcc5"
+    },
+    {
+      "path": "tests/fixtures/codex-0.162.1-startup.ansi",
+      "size": 4249,
+      "sha256": "0c4b76fce251777945b8aeb17aabc1fbfcedfab7ae553bda09804492046f4f0c"
+    },
+    {
+      "path": "tests/fixtures/codex-0.162.1-task.ansi",
+      "size": 662,
+      "sha256": "18bed1a06359eaa6533a20ddc6c47a7990f46c47a1686df2a98d11c398df69b5"
+    },
+    {
+      "path": "tests/fixtures/PROVENANCE.json",
+      "size": 652,
+      "sha256": "7d46145eac509fc377ac846012781820782784f27bf45c052a23d32eeb4fdc5c"
+    }
+  ],
+  "excludes": [
+    "host home",
+    "Codex auth/config",
+    "shell profiles",
+    "unlisted project files"
+  ]
+}

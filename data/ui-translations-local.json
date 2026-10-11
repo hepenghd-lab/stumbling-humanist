@@ -243,5 +243,85 @@
     "id": "D4",
     "en": "Press",
     "zh": "按"
+  },
+  {
+    "id": "E2",
+    "en": "for agents",
+    "zh": "查看代理"
+  },
+  {
+    "id": "E4",
+    "en": "Worked for",
+    "zh": "耗时"
+  },
+  {
+    "id": "F1",
+    "en": "Ask Codex to do anything",
+    "zh": "让 Codex 帮你完成任务"
+  },
+  {
+    "id": "F2",
+    "en": "To get started, describe a task or try one of these commands:",
+    "zh": "开始使用：描述任务，或试试以下命令："
+  },
+  {
+    "id": "F3",
+    "en": "create an AGENTS.md file with instructions for Codex",
+    "zh": "创建 AGENTS.md，为 Codex 提供项目指引"
+  },
+  {
+    "id": "F3",
+    "en": "show current session configuration",
+    "zh": "查看当前会话配置"
+  },
+  {
+    "id": "F3",
+    "en": "choose what Codex is allowed to do",
+    "zh": "设置 Codex 可以执行哪些操作"
+  },
+  {
+    "id": "F3",
+    "en": "choose what model and reasoning effort to use",
+    "zh": "选择模型和推理强度"
+  },
+  {
+    "id": "F3",
+    "en": "review any changes and find issues",
+    "zh": "审查改动并发现问题"
+  },
+  {
+    "id": "F4",
+    "en": "loading",
+    "zh": "加载中"
+  },
+  {
+    "id": "F4",
+    "en": "Shutting down...",
+    "zh": "正在退出..."
+  },
+  {
+    "id": "F5",
+    "en": "${count} warning",
+    "zh": "${count} 条警告"
+  },
+  {
+    "id": "F5",
+    "en": "${count} warnings",
+    "zh": "${count} 条警告"
+  },
+  {
+    "id": "F5",
+    "en": "to view",
+    "zh": "查看"
+  },
+  {
+    "id": "F6",
+    "en": "${hours}h limit: ${percent}% left",
+    "zh": "${hours}h限额：余${percent}%"
+  },
+  {
+    "id": "F6",
+    "en": "${days}d limit: ${percent}% left",
+    "zh": "${days}d限额：余${percent}%"
   }
 ]

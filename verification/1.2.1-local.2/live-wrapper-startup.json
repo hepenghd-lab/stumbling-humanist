@@ -1,0 +1,15 @@
+{
+  "real_official_binary": true,
+  "wrapper_enabled": true,
+  "official_binary_sha256": "74c6a6d263f40d65f99c27a815275f5b4ed0bcc2baecc396b4cf3255498bdfc0",
+  "temporary_home_and_config": true,
+  "provider": "invalid local-only endpoint",
+  "real_account_supplied": false,
+  "user_tasks_submitted": 0,
+  "output_bytes_before_redaction": 4530,
+  "output_cjk_characters": 82,
+  "unicode_decode_succeeded": true,
+  "exit_status": 0,
+  "capture_sha256": "b08b2867bc1bc333bc38ab4d66bc517e161e397802bdd9cb02c2017a52f1fb13",
+  "temporary_settings_removed": true
+}

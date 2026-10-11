@@ -1,8 +1,8 @@
-# A～E 全部界面元素的译文
+# 当前界面词表：65 条、31 组
 
-以下译文按牛津官方在线词义与 CLI 场景拟定，未声称逐条核对第10版英汉原文。`${…}` 字段的值保持原样。Run/Ran 采用“运行”操作标签，You ran 采用“你运行了”；短词空间不足时运行时保留英文。
+保留原 A～E 范围，按本次报告修复请求加入 E4/F1～F6。译法基于官方公开释义与 CLI 场景，未取得第10版完整英汉条目。动态字段、命令名、路径、数字和按键保留；宽度/定位不允许时保留英文。
 
-| 编号 | 英文提示 | 中文提示 |
+| 分组 | 英文 | 中文 |
 |---|---|---|
 | A1 | `Exploring` | 正在探查 |
 | A1 | `Explored` | 已探查 |
@@ -53,6 +53,19 @@
 | E3 | `again to edit previous message` | 再按一次编辑上一条消息 |
 | D4 | `to confirm or` | 确认，或按 |
 | D4 | `Press` | 按 |
-
-附带处理：编号选项和 `(y)` 等按键标记保留；已确认提示后面的 `...` / `…` 保留；不是在任意正文中替换子串。
-
+| E2 | `for agents` | 查看代理 |
+| E4 | `Worked for` | 耗时 |
+| F1 | `Ask Codex to do anything` | 让 Codex 帮你完成任务 |
+| F2 | `To get started, describe a task or try one of these commands:` | 开始使用：描述任务，或试试以下命令： |
+| F3 | `create an AGENTS.md file with instructions for Codex` | 创建 AGENTS.md，为 Codex 提供项目指引 |
+| F3 | `show current session configuration` | 查看当前会话配置 |
+| F3 | `choose what Codex is allowed to do` | 设置 Codex 可以执行哪些操作 |
+| F3 | `choose what model and reasoning effort to use` | 选择模型和推理强度 |
+| F3 | `review any changes and find issues` | 审查改动并发现问题 |
+| F4 | `loading` | 加载中 |
+| F4 | `Shutting down...` | 正在退出... |
+| F5 | `${count} warning` | ${count} 条警告 |
+| F5 | `${count} warnings` | ${count} 条警告 |
+| F5 | `to view` | 查看 |
+| F6 | `${hours}h limit: ${percent}% left` | ${hours}h限额：余${percent}% |
+| F6 | `${days}d limit: ${percent}% left` | ${days}d限额：余${percent}% |

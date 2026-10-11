@@ -3,6 +3,18 @@ name: Reproduce isolated verification
 on:
   push:
     branches: [main]
+    paths:
+      - 'bin/**'
+      - 'lib/**'
+      - 'data/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'package*.json'
+      - 'Dockerfile'
+      - '.dockerignore'
+      - 'install.sh'
+      - 'uninstall.sh'
+      - '.github/workflows/**'
   pull_request:
   workflow_dispatch:
 
@@ -20,6 +32,8 @@ jobs:
           persist-credentials: false
       - name: Check historical evidence against source
         run: python3 scripts/verify_public_evidence.py
+      - name: Verify current revision evidence and rerun captures
+        run: python3 scripts/verify_revision.py
       - name: Check temporary-runtime lifecycle with fixtures
         run: python3 -m unittest discover -s scripts -p test_temporary_container_test.py
       - name: Run actual restricted Docker container

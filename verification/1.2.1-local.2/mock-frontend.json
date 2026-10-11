@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "fixture_only": true,
+  "exit_code": 17,
+  "checks": [
+    "已探查",
+    "运行python test.py",
+    "失败（退出码7）",
+    "{\"status\":\"Working\"}",
+    "print(\"Working\")",
+    "› 1. 是，继续 (y)",
+    "剩余上下文 37%",
+    "ECHO 你好"
+  ],
+  "visible_output": "已探查  \n运行python test.py\n失败（退出码7）\n{\"status\":\"Working\"}\nprint(\"Working\")\n› 1. 是，继续 (y)    \n剩余上下文 37%  \nREADY\nECHO 你好\n"
+}

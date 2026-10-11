@@ -82,6 +82,7 @@ class TemporaryRuntimeTests(unittest.TestCase):
                 return subprocess.CompletedProcess(arguments, 0, '{}', '')
 
             with (patch.object(temporary, 'ROOT', root),
+                  patch.object(temporary, 'RUNTIME_PARENT', root),
                   patch.object(temporary, 'call', fake_call),
                   patch.object(temporary, 'download', side_effect=RuntimeError('fixture download failed')),
                   patch.object(temporary.platform, 'system', return_value='Darwin'),
@@ -127,6 +128,7 @@ class TemporaryRuntimeTests(unittest.TestCase):
                     raise subprocess.CalledProcessError(9, [engine, *arguments])
 
             with (patch.object(temporary, 'ROOT', root),
+                  patch.object(temporary, 'RUNTIME_PARENT', root),
                   patch.object(temporary, 'call', fake_call),
                   patch.object(temporary, 'run_logged', fake_logged),
                   patch.object(temporary, 'download'),
